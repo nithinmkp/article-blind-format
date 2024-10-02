@@ -27,7 +27,7 @@ author:
         number: 2
         name: IIT Kanpur
         department: Department of Economic Sciences 
-
+thanks: "Authors would like to thank Ms. Monami Mitra, Director, Price Statistics Division, National Statistical Office, Government of India"
     
 
 ---

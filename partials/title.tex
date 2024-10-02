@@ -3,20 +3,21 @@ $if(title)$
 $endif$
 
 $for(by-author)$
-\author{$it.name.literal$ 
-$if(it.acknowledgements)$\thanks{$it.acknowledgements$}$endif$} 
-\affil{$for(it.affiliations)$ 
-$if(it.department)$$it.department$$if(it.name)$, $endif$$endif$ % Department, if available, followed by a comma if institution is present
-$if(it.name)$$it.name$$endif$ 
-$endfor$}
+\author{
+  $it.name.literal$%
+  $if(by-author.attributes.corresponding)$\thanks{Corresponding author.\\ Email: \texttt{$by-author.email$}}$endif$%  % Add corresponding author footnote if applicable
+  $if(it.acknowledgements)$\thanks{$it.acknowledgements$}$endif$  % Add acknowledgments if applicable
+}
 
-$sep$
+\affil{$for(it.affiliations)$ 
+  $if(it.department)$$it.department$$if(it.name)$, $endif$$endif$  % Department, followed by a comma if institution is present
+  $if(it.name)$$it.name$$endif$  % Institution name
+  $sep$  % Ensure proper separation of affiliations
+$endfor$}
 $endfor$
 
 $if(date)$
 \date{$date$}
 $else$
-\date{} % Leaves the date blank if no date is provided
+\date{}  % Leaves the date blank if no date is provided
 $endif$
-
-
