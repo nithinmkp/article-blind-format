@@ -1,0 +1,62 @@
+---
+bibliography: references.bib
+---
+
+A generic household $h$, belonging to the geographical location $j$ in our model calculates the minimum expenditure required to obtain a certain consumption bundle by solving the following static problem in each period $t$,
+
+\begin{mini*}|l|
+{}{e_{h, t}^j=\sum_{i=1} p_{i, t}^j c_{i, h t}^j \,; \quad h=1,2,\ldots,H; \quad j={\ rural,urban\ }}
+{}{}
+\addConstraint{c_{h,t}^j}{=}{\prod_{i=1}^{n}\left(c_{i,ht}^j\right)^{a_{i,ht}^j} \,;\quad \sum_{i=1}^{n}{\alpha_{i,ht}^j=1;}}
+\end{mini*}
+
+where, $p_{i,t}^j$ is the price of the $i^{th}$ sub-category of consumption at, $t$ for the household, $h$ belonging to the $j^{th}$ geographical location. $c_{i,h,t}^j$, and $\alpha_{i,h,t}^j$ are the real respectively the demand, and the expenditure share of the $i^{th}$ sub-category of goods by household, $h$; belonging to the $j^{th}$ geographical location at $t$. $e_{h,t}^j$ is the nominal expenditure of household, $h$; belonging to the $j^{th}$ geographical location at time, $t$. The optimization exercise yields a (real) consumption bundle for the household, $h$; belonging to the $j^{th}$ geographical location at time, $t$, as written below,
+
+$$
+c_{h,t}^j=\frac{k_{h,t}^j\ e_{i,h,t}^j}{p_{h,t}^j}
+$$ {#eq-basket}
+
+where, $p_{h,t}^j$ is a measure of aggregate price index for household $h$, belonging to the $j^{th}$ geographical location at $t$ as written below, 
+
+$$ 
+p_{h,t}^j=\prod_{i=1}^{n}\left(p_{i,t}^j\right)^{\alpha_{i,ht}^j}\ ;
+$$ {#eq-price} 
+
+and,
+
+$$
+k_{h,t}^j=\prod_{i=1}^{n}{\alpha_{i,ht}^j}^{\alpha_{i,ht}^j}
+$$ 
+
+The real income of household, $h$ belonging to the $j^{th}$ geographical location at time, $t$ is calculated by deflation their nominal income by the price index, $p_{h,t}^j$. It is denoted by, $a_{h,t}^j$ in our model.
+
+Next, the generic household $h$ solves an intertemporal problem to decide the time path of consumption.
+
+\begin{maxi*}|l|
+    {}{E_0\sum_{t=0}^{\infty}\left(\beta_h^j\right)^t \log\left(c_{h,t}^j\right)}{\label{eq:objective}}{}
+    \addConstraint{a_{h,t}^j - c_{h,t}^j}{= \frac{a_{h,t+1}^j}{R_{t+1}}}{}
+    \addConstraint{
+        \begin{aligned}
+        a_{h,0}^j &= \text{given} \quad &\text{(Initial condition)} \\
+        \lim_{t \to \infty} R^{-(t+T)}a_{h,t}^j &\geq 0 \quad &\text{(Transversality Condition (TVC))}
+        \end{aligned}
+    }{}
+\end{maxi*}
+
+where, $a_{h,t}^j$ is the real income, of household $h$, belonging to the $j^{th}$ geographical location at $t$, $R_{t}$is the gross real interest rate at time, $t$, and $0<β<1$ is the discount factor. Under logarithmic utility function, and $β=R^{(-1)}$, the Euler equation gives
+
+$$
+\Delta ln(c_h(t+1)^j\ )=\delta_h(t+1)^j
+$$ {#eq-euler}
+
+where, $E_t\left(\delta_{h\left(t+1\right)}^j\right)=0$. The PIH assumes, $\delta_{h\left(t+1\right)}^j$ is sunspots, and independent of economic fundamentals. As a result, \cref{eq-euler} implies, log transformed consumption follows a random walk process, and growth rate of consumption is unpredictable [@hall1978]    However, to check the excess sensitivity of consumption to sentiments for the US, @souleles_expectations_2004 assumes, $\delta_{h\left(t+1\right)}^j$ is not random, but it is systematically dependent on household sentiments, and their demographic characteristics. Hence, following @souleles_expectations_2004, we estimate \Cref{eq-sol1} to test the excess sensitivity of consumption to sentiments for the Indian households. 
+
+$$
+\Delta ln\left(c_{h\left(t+1\right)}^j\right){=b_0 time+b_1W_{h\left(t+1\right)}}+b_2Q_{ht}^j+\eta_{h\left(t+1\right)}
+$$ {#eq-sol1}
+
+where, $E_t\left(\eta_{h\left(t+1\right)}\right)=0$, and $\Delta ln\left(c_{h\left(t+1\right)}^j\right)$ is the growth rate of the consumption  between time $t$ to $\left(t+1\right)$ of household, $h$ belonging to the $j^{th}$ geographical location. Here, *time* represents the time dummy that takes a value 1 for a given month, and 0 otherwise. $W_{h\left(t+1\right)}$ is the demographic components of household $h$, which includes - change in number of kids, change in number of adults, and the age of household head in our estimation.
+
+$Q_{ht}^j$ in \Cref{eq-sol1} is the excess sensitivity repressor for a household, $h$ belonging to the $j^{th}$ geographical location at time, $t$. $Q_{ht}^j$ is calculated by using questions (ii), and (iii) given in \Cref{sec-2}, and it takes discrete integer values $\left(-1, 0, 1\right)$. When the excess sensitivity regressor, $Q_{ht}^j$ is calculated based on the household’s year ahead perception about their own financial position, as given in question (ii), it is denoted by $Q_{FC}$ in our estimation (see, \Cref{tab-ols_food,tab-ols_food_fuel,tab-gmm_food,tab-gmm_food_fuel}). On the other hand, when the excess sensitivity is calculated based on household’s perception about the year ahead business condition of the economy, as given in question (ii), it is denoted by, $Q_{BC}$ in our estimation (see, \Cref{tab-ols_food,tab-ols_food_fuel,tab-gmm_food,tab-gmm_food_fuel}). The advantage of using household sentiments as an excess sensitivity rgressor is that, it parsimoniously encapsulates a lot of factors, e.g.; household’s perception about their own financial condition, overall economic conditions, unemployment; borrowing constrains, income uncertainty, etc. that might affect household consumption growth as suggested by previous literature.  
+
+Intuitively, \Cref{eq-sol1} suggests that, the aggregate shock, $\delta_{h\left(t+1\right)}^j$ has two different components through which it is mediated to consumption growth – (a) a symmetric component of shock that equally affects every households through the time dummy, time. The time dummy captures the impact of macroeconomic aggregates, as well as the shocks like demonetization, Covid-19, etc.; and (b) an asymmetric component of shock that affects households differently through their sentiments, and demographic characteristics.

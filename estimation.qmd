@@ -1,0 +1,181 @@
+---
+bibliography: references.bib
+---
+Before presenting ours for India, let us briefly explain the results of @souleles_expectations_2004 for the US. Since, the data of household consumption, and their sentiments are sourced from two different surveys, @souleles_expectations_2004 estimates \cref{eq-sol1} for the US through a two-sample instrumental variables techniques of [see, @angrist_effect_1992]. To do it @souleles_expectations_2004 matched the sentiments of the households included in CAB, with the households surveyed in CEX using the information of their demographic profile as follows - (i) regress the sentiments of the households included in CAB on a vector, $Z$=[\ *age\ast monthly\ dummies,\ income\ast monthly\ dummies,\ \ \ location,\ \ \ marital\ status,\ \ gender\ of\ household\ head,\ \ education,\ nature\ of\ occupation,\ \ log\ of\ real\ income* ]; (ii) calculate an “estimated sentiments” of the households included in CEX by using their demographic information, 𝑍 and estimated coefficients obtained from step (i), and (ii) estimate \cref{eq-sol1} by using the estimated sentiments of the households obtained from step (ii) [^3].
+
+Note, the relevant parameter of interest is $b_2$, the coefficient of the excess sensitivity regressor $\left(Q_{ht}^j\right)$ in \cref{eq-sol1}. @souleles_expectations_2004 finds, $b_2$ is negative, and significant at 5% level. A significant $b_2$ implies that, the excess sensitivity of consumption to sentiments exists, and sentiments helps predicting consumption growth. This further implies that, the PIH does not hold for the US. Moreover, a flatter consumption profile, represented by the negative value, $b_2$ implies that, the precautionary savings motive exists for the US households. 
+
+Since, unlike the US, the data of household consumption, their sentiments, and other relevant demographic variables for India are obtained from CPHS, CMIE, we initially estimate \cref{eq-sol1} by OLS to check the excess sensitivity of the consumption of the Indian households. The results of the baseline OLS estimation, which captures the direct impact of sentiments on the growth rate of household consumption bundles; consisting only the 8 food groups (see; \Cref{sec-2}) are reported in Column 2 of \Cref{tab-ols_food}.  Column 2 of \Cref{tab-ols_food} reports the results of the OLS estimation reports the results of the OLS estimation when household’s perception about their year ahead own financial condition, $Q_{FP}$ is used as the excess sensitivity regressor, along with the demographic variables - change in number of kids, change in number of adults, and the age of the household age as the control variables to estimate \cref{eq-sol1} by OLS. The results of the OLS estimation, reported in Column 2 of \cref{tab-ols_food} shows that, the coefficient of the excess sensitivity regressor ($Q_{FP}$) – $b_2$ is significant at 1% level. This implies, like the US, the excess sensitivity of consumption to sentiments exists, and sentiments helps predicting consumption growth for the India too. This further also implies that, the PIH does not hold for India as well. On the other hand, we find that, $b_2$ is positive for the Indian. The results of our OLS estimation implies that, better sentiments yields a steeper consumption profile for the Indian households – a unit rise in $Q_{FP}$ increases the consumption growth of the Indian households by only 0.9%.  
+
+\begin{table}
+\scriptsize
+\centering
+\caption{OLS Estimation for Food}
+\label{tab-ols_food}
+\resizebox{\linewidth}{!}{%
+\begin{tblr}{
+  cell{10}{1} = {c=4}{},
+  cell{11}{1} = {c=4}{},
+  cell{12}{1} = {c=4}{},
+  cell{13}{1} = {c=4}{},
+  hline{1,14} = {-}{0.08em},
+  hline{2,8,10} = {-}{},
+}
+                       & (1)                  & (2)                  & (3)                  \\
+$Q_{FP}$               & {0.009*** \\(0.002)} &                      & {0.03*** \\(0.003)} \\
+$Q_{BC}$               &                      & {0.003*** \\(0.002)} &                      \\
+$FE_{FP}$              &                      &                      & {0.027*** \\(0.002)} \\
+Age                    & {-0.000***\\(0.002)} & {-0.000***\\(0.000)} & {-0.000***\\(0.000)} \\
+$\Delta$~kids          & {0.011***\\(0.012)}     & {0.011*** \\(0.012)}   & {0.011*** \\(0.012)}    \\
+$\Delta$~adults         & {0.038*** \\(0.002)}   & {0.038*** \\(0.002)}   & {0.039*** \\(0.002)}  \\
+Time Dummies           & Yes                  & Yes                  & Yes                  \\
+Number of Observations & 58,871               & 58,871               & 53,312               \\
+~                      &                      &                      &                      \\
+
+\end{tblr}
+}
+\vspace{-3.5em}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii) FE represents forecast errors of the financial position, (iv) ***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.
+}
+\end{table}
+
+Note, after food, the second most important component in the basket of Indian household consumption, is fuel[^4].  As a result, following the methodology described in \Cref{sec-3}, we re-construct a new consumption bundle for the Indian households with 8 food groups, and fuel and lighting. Using this new consumption bundle, we re-estimate \cref{eq-sol1} by OLS for the Indian houeholds. We have reported this results in Column 2 of \Cref{tab-ols_food_fuel}. Our results show that, the coefficient of the excess sensitivity parameter ($Q_{FP}$) – $b_2$ remains positive, and significant at 1% level. Results of OLS estimation, reported in \Cref{tab-ols_food_fuel} shows that, a unit rise in $Q_{FP}$ increases the consumption growth of the Indian households by only 5.4%. Note, the results reported in \Cref{tab-ols_food,tab-ols_food_fuel} show that, consumption growth rate of the Indian households are more sensitive when fuel and lighting is included in the consumption bundle of the household along with the food groups.   
+
+
+
+\begin{table}
+\scriptsize
+\centering
+\caption{OLS Estimation for Food and Fuel}
+\label{tab-ols_food_fuel}
+\resizebox{\linewidth}{!}{%
+\begin{tblr}{
+  cell{10}{1} = {c=4}{},
+  cell{11}{1} = {c=4}{},
+  cell{12}{1} = {c=4}{},
+  cell{13}{1} = {c=4}{},
+  hline{1,14} = {-}{0.08em},
+  hline{2,8,10} = {-}{},
+}
+                       & (1)                  & (2)                  & (3)                  \\
+$Q_{FP}$               & {0.054*** \\(0.002)} &                      & {0.023*** \\(0.003)} \\
+$Q_{BC}$               &                      & {0.003*** \\(0.002)} &                      \\
+$FE_{FP}$              &                      &                      & {0.023*** \\(0.002)} \\
+Age                    & {-0.000***\\(0.002)} & {-0.000***\\(0.000)} & {-0.000***\\(0.000)} \\
+$\Delta$~kids          & {0.07***\\(0.002)}     & {0.07***\\(0.002)}   & {0.06***\\(0.003)}    \\
+$\Delta$~adults         & {0.028*** \\(0.002)}   & {0.002*** \\(0.002)}   & {0.029*** \\(0.002)}  \\
+Time Dummies           & Yes                  & Yes                  & Yes                  \\
+Number of Observations & 58,871               & 58,871               & 53,312               \\
+~                      &                      &                      &                      \\
+
+\end{tblr}
+}
+\vspace{-3.5em}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii) FE represents forecast errors of the financial position, (iv) ***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.
+}
+\end{table}
+
+It is important to mention here that, the two step estimation technique, adopted by @souleles_expectations_2004 as described above intuitively assumes that, the part of the household sentiments, explained by their income, and other demographic characteristics, $Z$= [\ age\ast monthly\ dummies,\ income\ast monthly\ dummies,\ \ \ location,\ \ \ marital\ status,\ \ gender\ of\ household\ head,\ \ education,\ nature\ of\ occupation,\ \ log\ of\ real\ income ] affects their consumption growth. In other words, @souleles_expectations_2004 assumes that, the demographic variables of the households, includes in $Z$ does not directly affects their consumption growth, they influence their consumption growth indirectly through their sentiments. 
+
+Following the spirit of @souleles_expectations_2004, we re-estimate \cref{eq-sol1} for the Indian households through GMM by using, $Z$=[\ age\ast monthl \ dummies,\ income\ast monthly\ dummies,\ \ \ location,\ \ \ marital\ status,\ \ gender\ of\ household\ head,\ \ education,\ nature\ of\ occupation,\ \ log\ of\ real\ income], as an instrument for the excess sensitivity regressor, $Q_{FP}$ [^5].  The results of the GMM estimation of \cref{eq-sol1} for the consumption bundle; consisting of 8 food groups, and for the consumption bundle; consisting of food and fuel along with the 8 food groups are reported in \Cref{tab-gmm_food,tab-gmm_food_fuel} respectively. Note, like the OLS estimation, the results of the GMM estimation, reported in Column 2 of \Cref{tab-gmm_food} and Column 2 of \Cref{tab-gmm_food_fuel} also yields a positive, and highly significant coefficients of the excess sensitivity regressor\ $\left(Q_{FP}\right)$ -\ $b_2$, establishing the robustness of our results. 
+
+\begin{table}
+\scriptsize
+\centering
+\caption{GMM Estimation for Food}
+\label{tab-gmm_food}
+\resizebox{\linewidth}{!}{%
+\begin{tblr}{
+  cell{10}{1} = {c=4}{},
+  cell{11}{1} = {c=4}{},
+  cell{12}{1} = {c=4}{},
+  cell{13}{1} = {c=4}{},
+  hline{1,14} = {-}{0.08em},
+  hline{2,8,10} = {-}{},
+}
+                       & (1)                  & (2)                  & (3)                  \\
+$Q_{FP}$               & {0.555***  \\(0.00)} &                      & {0.476***  \\(0.00)} \\
+$Q_{BC}$               &                      & {0.345***  \\(0.038)} &                      \\
+$FE_{FP}$              &                      &                      & {0.53***  \\(0.00)} \\
+Age                    & {-0.001***\\(0.000)} & {-0.001***\\(0.000)} & {-0.001 \\(0.96)} \\
+$\Delta$~kids          & {0.009 \\(0.37)}     & {-0.007  \\(0.009)}   & {0.017 \\(0.012)}    \\
+$\Delta$~adults         & {0.018  \\(0.46)}   & {0.041**  \\(0.021)}   & {0.009 \\(0.71)}  \\
+Time Dummies           & Yes                  & Yes                  & Yes                  \\
+Number of Observations & 58,871               & 58,871               & 53,312               \\
+~                      &                      &                      &                      \\
+
+\end{tblr}
+}
+\vspace{-3.5em}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii) FE represents forecast errors of the financial position, (iv) ***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.
+}
+\end{table}
+
+Besides, $Q_{FP}$; we have also estimated \cref{eq-sol1} through OLS by using the household’s perception of the year ahead business conditions of the economy as an excess sensitivity regressor. It is denoted by, Q_{BC} in \Cref{tab-ols_food,tab-ols_food_fuel}. We find that, the estimated coefficient of $Q_{BC}$, obtained from the OLS estimation is positive but non-significant (see, Column 3 of  \Cref{tab-ols_food,tab-ols_food_fuel}). However, our GMM estimation yields a highly significant (significant at 1% level), and positive coefficient of the excess sensitivity regressor, $Q_{BC}$ as reported in \Cref{tab-gmm_food} (for consumption bundle; consisting of 8 food groups), and \Cref{tab-gmm_food_fuel} (for the consumption bundle; consisting of 8 food groups, and fuel and lighting). The results of our GMM estimation, where only the part of the household sentiments explained by their income and the demographic characteristics enters into the estimation show that, a unit rise in the excess sensitivity regressor, $Q_{FP}$ ($Q_{BC}$) predicts the consumption growth to rise by 69.5% (66.1%) when the consumption bundle includes fuel and lighting too in the consumption bundle with the food groups (see; \Cref{tab-gmm_food_fuel}). Note, our results reported in \Cref{tab-ols_food,tab-ols_food_fuel,tab-gmm_food,tab-gmm_food_fuel} show that, alongside sentiments, even the demographic variable like the change in number of kids, change in number of adults, and the age of the household also contain additional information beyond that in current consumption that helps to predict consumption of the Indian households.
+
+To elucidate the positive coefficient of the excess sensitivity regressor, $b_2$ in \cref{eq-sol1} seems counterintuitive with respect to the precautionary savings motive of the households. To explain the positive coefficient of the excess sensitivity regressor note that, the advantage of using household sentiments as an excess sensitivity regressor is that, it parsimoniously captures a variety of shocks and the economic conditions for the Indian households in \cref{eq-sol1} like – shock of Covid-19 pandemic, demonetization, household specific constraints like liquidity, and borrowing constraints, etc. that creates a widespread cloud of uncertainty and restrictions, and hinder households to fully smooth their consumption. 
+
+To obtain a measure of uncertainty for India, following @lahiri_forecasting_2016, we calculate a balance statistic for India. The yearly average of the balance statistic is calculated by using the questions (II), and (III) related to household’s perception about their own year ahead financial conditions, and business condition. It is calculated by adding 100 with difference of the proportion of responses codded as good/better response, and the proportion of responses coded as bad/worse. Note, the value of the balance statistic less (more) than 100 represents more households with the bad (good) perception about their future financial condition, and the business condition. \Cref{fig-financial,fig-business} show that, the value of the balance statistic is - (i) always below the neutral value 100; and (ii) hits the nadir during the period of Covid-19, and yet to recover from it. \Cref{fig-financial,fig-business} succinctly represents the perception of uncertainty prevailing in the mind of Indian households during 2016-2022. 
+
+![financial conditions](images/family_finances_a_year_later.jpg){fig-pos='h' #fig-financial height=120%}
+
+![business conditions](images/conditions_in_country_over_next_12_months.jpg){#fig-business fig-pos='h' height=120%}
+
+We believe that, absence of the wide spread social security net like the developed countries, Indian households mitigate the perception of a growing uncertainty by increasing their savings as a precaution. Hence, the positive coefficient of the excess sensitivity regressor, $b_2$ also represents the presence of the precautionary savings motive among Indian households. The explanation of the precautionary savings motive given above is identical in spirit with the explanation of by @acemoglou1994 given for the US.[^6] 
+
+\begin{table}[H]
+\scriptsize
+\centering
+\caption{GMM Estimation for Food and Fuel}
+\label{tab-gmm_food_fuel}
+\resizebox{\linewidth}{!}{%
+\begin{tblr}{
+  cell{10}{1} = {c=4}{},
+  cell{11}{1} = {c=4}{},
+  cell{12}{1} = {c=4}{},
+  cell{13}{1} = {c=4}{},
+  hline{1,14} = {-}{0.08em},
+  hline{2,8,10} = {-}{},
+}
+                       & (1)                  & (2)                  & (3)                  \\
+$Q_{FP}$               & {0.695*** \\(0.030)} &                      & {0.602*** \\(0.030)} \\
+$Q_{BC}$               &                      & {0.661*** \\(0.037)} &                      \\
+$FE_{FP}$              &                      &                      & {0.613*** \\(0.061)} \\
+Age                    & {-0.001***\\(0.000)} & {-0.001***\\(0.000)} & {-0.001***\\(0.000)} \\
+$\Delta$~kids          & {0.010\\(0.012)}     & {-0.015 \\(0.012)}   & {0.017 \\(0.012)}    \\
+$\Delta$~adults         & {-0.342 \\(0.026)}   & {-0.010 \\(0.026)}   & {-0.056**\\(0.027)}  \\
+Time Dummies           & Yes                  & Yes                  & Yes                  \\
+Number of Observations & 58,871               & 58,871               & 53,312               \\
+~                      &                      &                      &                      \\
+
+\end{tblr}
+}
+\vspace{-3.5em}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii) FE represents forecast errors of the financial position, (iv) ***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.
+}
+\end{table}
+
+Note, as cautioned by @souleles_expectations_2004, we have to be careful about the presence of spurious excess sensitivity in our estimation; originating from the various components, and the characteristics of the random error of \cref{eq-sol1} - $\eta$. Souleles (2004) explains that, if a particular type of households consistently experience adverse shock (for example, on income), it gets reflected in their forecast error, hidden in the random error term, $\eta$. @souleles_expectations_2004 also explains that, such forecast errors can highly influence the household sentiments as well. Note, such a correlation between the random error, $\eta$ and sentiments produces inconsistent estimates, and also the spurious excess sensitivity of consumption had we not controlled for the household’s forecast errors. To check the possibility of correlation between the random error term and the sentiments of \cref{eq-sol1}, we calculate the forecast error of the households related to their own financial position using the difference in answer of a household to questions (I) and (II) reported in CPHS, CMIE, and plot it in \Cref{fig-fe}. The co-movement of the forecast error, plotted in \Cref{fig-fe}, with the balance statistics, plotted in \Cref{fig-financial,fig-business} reveals a possibility of correlation between the sentiments and the forecast error for the Indian households. 
+
+![Forecast Errors](images/fe_plot.jpg){#fig-fe fig-pos='h' height=120%}
+
+As a result, to eliminate the possibility of spurious excess sensitivity, we re-estimate \cref{eq-sol2}  through OLS, and GMM by including the forecast error of the households regarding their own financial position, ${FE}_{PC,ht}$ as an additional control variable.
+
+$$
+\Delta ln\left(c_{h\left(t+1\right)}^j\right){=b_0time+b_1W_{h\left(t+1\right)}}+b_2Q_{ht}^j+b_3{FE}_{PC,ht}+\omega_{h\left(t+1\right)}
+$$ {#eq-sol2}
+
+While, column 4 of \Cref{tab-ols_food,tab-ols_food_fuel} reports the results of the estimation of equation (3) by OLS, column 4 of \Cref{tab-gmm_food,tab-gmm_food_fuel} report the results of the GMM when $Q_{FP}$ is taken as the excess sensitivity regressor. Our results show that the coefficient of the excess sensitivity regressor, $b_2$, remains positive, and significant at 1% level, along with the coefficient of the forecast error, $b_3$ when we estimate \cref{eq-sol2} by GMM. Our results show that, once we control for the forecast error of the households regarding their own financial position, a unit rise in $Q_{FP}$  predicts the consumption growth of the Indian households to rise by, 47.6% when the consumption bundle includes only food groups (see; \cref{tab-gmm_food}). However, a unit rise in $Q_{FP}$ predicts a significantly higher consumption growth, 60.2% once fuel and lighting is included in the consumption bundle of the household with the food groups.
+
+Using appropriate econometric models suggested by literature, our analysis robustly establish, like the US - (i) the household sentiments contains additional information beyond that in current consumption that helps to predict the consumption of the Indian households, leading to the violation of the PIH for India, (ii) the precautionary savings motive holds for the Indian households, (iii) even the information contained in the demographic variables like, change in number of kids, change in number of adults, and the age of the household age are important to predict the consumption growth of India; and (iv) food and fuel is a very important component of the consumption bundle of the Indian households. Their consumption growth becomes highly sensitive to sentiments when fuel and lighting is included in the consumption bundle of the households along with the food groups. 
+
+
+
+
+[^3]: Note, since an estimated household sentiments are used in the second step for the estimation of \Cref{eq-sol1}, it requires to adjust the standard errors of the estimated coefficients of \Cref{eq-sol1} for drawing appropriate statistical inferences. To handle it, @souleles_expectations_2004 used the two-sample instrumental variables techniques of @angrist_effect_1992 in his estimation. 
+
+[^4]:The average share consumption expenditure for food and fuel is almost 92\%  in the last 5 years for the Indian households While, the average share of the food during last 5 years is almost 67\%, the same for the fuel is almost 25\%.
+
+[^5]:@souleles_expectations_2004 use a two-sample instrumental variables technique to estimate \cref{eq-sol2} because the data of household consumption and their sentiments for the US are sourced from two different surveys as mentioned in the text. We obtain data of household consumption, sentiments, and other control variables used in \cref{eq-sol2} from a single survey – CPHS, CMIE. Hence, instead of the two-sample instrumental variables technique, we estimate \cref{eq-sol2} by GMM, which is same in spirit with the two-sample instrumental variables technique used by @souleles_expectations_2004 as mentioned in the text.    
+
+[^6]: Using aggregate data, @acemoglou1994 also find sentiments positively affects consumption growth of the UK. They show that, the higher consumer confidence is not only associated with higher average income, but is also associated with the higher income uncertainty; yielding the positive coefficient of the excess sensitivity regressor for the US. 

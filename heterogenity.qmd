@@ -1,0 +1,32 @@
+---
+bibliography: references.bib
+---
+Using \Cref{eq-price}, we calculate the household specific price level. The log difference of the household specific price level yields the Y-o-Y household specific inflation rate from May, 2017 to October, 2022. Next, depending on the occupation of the household head, we classify the households into 4 classes – (i)
+Agriculture and Allied, (ii) Manufacturing, Industry and Automobile, (iii) Services, media, and health, and (iv) Others. Consequently, we identify the average inflation rate for each occupational classes for two types of expenditure minimizing consumption bundles – (i) consumption bundles with 8 food groups, an(ii) consumption bundle with food and fuel. \Cref{fig-mean_occup} plots the average inflation rate for the occupational classes mentioned above from May, 2017 to October, 2022. Along with the inflation rate corresponding to each occupational classes, \Cref{fig-mean_occup} also plots the aggregate inflation rate based on CPI from May, 2017 to October, 2022. 
+
+\Cref{fig-mean_occup} shows – (i) households belonging to each occupational classes experience significantly different inflation rate from each other, and (ii) inflation rate of households belonging to different occupational groups significantly differs from the aggregate inflation rate based on CPI. In other word, Figure 1 reveals
+the existence of time-varying cross sectional heterogeneity of inflation rate for the Indian households, which gets lost in aggregation. Moreover, to identify the information content, we calculate the average standard deviation of the inflation rate for the households belonging to different occupational classes from May,
+2017 to October, 2022, and plot it in \Cref{fig-sd_occup}. The significant variations in the standard deviation of the inflation rate depicted in \Cref{fig-sd_occup} shows the rich information content in the household specific inflation rate of India, which we lose in aggregation. 
+
+To further understand the importance of the cross sectional heterogeneity, and the corresponding information content, we classify the inflation rate of the Indian households according to the age, and the educational qualification of the head of the Indian households. \Cref{fig-mean_age,fig-sd_age}respectively plot the
+average inflation rate, and average standard deviation of the inflation rate when the households are classified according to the age of the head of the households. Similarly, \Cref{fig-mean_educ,fig-sd_educ} respectively plot the average inflation rate, and average standard deviation of the inflation rate when the households are classified according to the educational level of the head of the households. Akin to \Cref{fig-mean_occup,fig-sd_occup}, \Cref{fig-mean_age,fig-sd_age,fig-mean_educ,fig-sd_educ} also reveal the rich information content in the in the household specific inflation rate, originating from the time-varying cross sectional heterogeneity of the data. 
+
+![Average Inflation Rate among occupational class vis-a-vis CPI](images/mean_occupation.jpg){#fig-mean_occup height=150%}
+
+![Standard Deviation of Inflation Rate among occupational class vis-a-vis CPI](images/sd_occup.jpg){#fig-sd_occup height=150%}
+
+To identify the source of the time-varying cross sectional heterogeneity, and the associated information content in the household specific inflation rate note, the weights of different goods, included in the basket
+of CPI are fixed across households from 2016 to 2022. But, the expenditure shares of goods included in the consumption bundle, $\alpha_{i,ht}^j$ vary both across households, and over time. We have used these time-varying household specific expenditure shares as weights to calculate the household specific price index from \cref{eq-price}. These expenditure shares of goods, $\alpha_{i,ht}^j$
+included in the consumption bundle, which vary both across time and households yields the time-varying cross sectional heterogeneity, and the associated
+information content of inflation rate for the Indian households, as depicted in the \Cref{fig-mean_occup,fig-sd_occup,fig-mean_age,fig-sd_age,fig-mean_educ,fig-sd_educ}. 
+
+![Average Inflation Rate among age groups vis-a-vis CPI](images/mean_age.jpg){#fig-mean_age height=150%}
+
+![Standard Deviation of Inflation Rate among age groups vis-a-vis CPI](images/sd_age.jpg){#fig-sd_age height=150%}
+
+![Average Inflation Rate among educational groups vis-a-vis CPI](images/mean_educ.jpg){#fig-mean_educ height=150%}
+
+![Standard Deviation of Inflation Rate among educational groups vis-a-vis CPI](images/sd_educ.jpg){#fig-sd_educ height=150%}
+
+Note, since the aggregate CPI is fixed across households, we partially lose important information if we use it to deflate household’s nominal consumption expenditure to calculate their real consumption expenditure. A plethora of existing literature have obtained the real consumption expenditure in this fashion for different households. However, to preserve the information content of the data and to fully utilize it in the estimation, we calculate an expenditure minimizing consumption bundle (for food, and also for food and fuel) for
+Indian households from \cref{eq-basket} by using the household specific price index given in \cref{eq-price}. Note, the expenditure minimizing consumption bundle obtained from \cref{eq-basket} yields a measure of real consumption expenditure. Such a measure of real consumption expenditure fully preserves the time-varying cross sectional heterogeneity, and the associated information content of the household specific nominal consumption expenditure, and the household specific price level. Similarly, by deflating the nominal income by the corresponding household specific price index, we calculate the household specific real income; and use it in our estimation of \cref{eq-sol1}. 

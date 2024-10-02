@@ -1,0 +1,46 @@
+---
+bibliography: references.bib
+---
+
+CPHS collects sentiments data of Indian households from April, 2016. To do it, a generic household h is surveyed thrice in a year in an interval of every four months by CPHS. For example, a household surveyed in April, 2016 will be surveyed again in August, 2016 for the collection of the sentiments data and so on. To collect the data of sentiments, the CPHS asks the following questions to the households – (I) compare to a year ago, how is your family faring financially these days? ; (II) How do you think that a year from now, financially, your family would be faring?; (III) How would you describe the financial and business conditions in our country in the next 12 months?; (V) What do you think would be the financial and business conditions in our country in the next 5 years?; (V) Do you think that this is generally a good or bad times to buy things like furniture, refrigerator, television, two-wheeler, car? While, the answer to questions (I), and (II) mentioned above are recorded as Better, Same and Worse, and accordingly assigned a numerical value, 1, 0, -1 respectively, answer to questions (III), (IV) and (V) are recorded as Good time, Uncertain time and Bad time, and accordingly take numerical value, 1, 0 and -1 is assigned respectively. We have used the answer of the questions (II), and (III) from April, 2016 to October, 2022 as the measure of sentiments for our analysis, which takes the values -1, 0, 1 for negative response, neutral response, and positive response respectively. Note, the sentiments related to question (II) represents the perception of the households about their own year ahead financial position, denoted by $Q_{FP}$ in our analysis. On the other hand, sentiments related to question (III) represents the perception of the households about year ahead business conditions, denoted by $Q_{BC}$ in our analysis. Moreover, using the difference in response to question (I) and (II), we also calculate the forecast error related to household’s financial position, and used it in our estimation as a separate control variable to eliminate the possibility of spurious excess sensitivity (see; @souleles_expectations_2004). For a generic household h, this forecast error can take discrete integer values between -2 to 2[^1] . We denote the forecast error by FE in our analysis. 
+
+From the CPHS survey, we also collect the data of monthly consumption expenditures of households for 8 food groups; and fuel and for our estimation. To do it, we collect relevant price index of different food items from MoSPI. The price index for 5 food groups - (1) cereals; (2) oils and fats; (3) fruits; (4) pulses and products; and (5) milk and milk products are directly available in MoSPI[^2].  But, MoSPI reports price index separately for the food items like (i) meat and fish; (ii) egg; (iii) vegetables; (iv) spices; (v) sweets; and (vi) snacks. Using the price index, and the corresponding weights of the 6 food items mentioned above, we calculate the monthly price index of the following food groups- (1) meat, fish and egg; (2) vegetables and spices; and (3) sweets and snacks. We also collect monthly price index of fuel and lighting from MoSPI. 
+
+Using the monthly data of various sub-categories of consumption expenditures as mentioned above, and the appropriate price index, we calculate to calculate 2 types of consumption bundles for each household - (i) consumption bundle, consisting of 8 food groups, and (ii) consumption bundle, consisting of 8 food groups, and fuel and lighting. The methodology of constructing the consumption bundle, and a household level aggregate price index is described \Cref{sec-3}.
+
+Along with the household level consumption expenditures, we also collect data of monthly income of the households from the CPHS survey, and calculate monthly real income after deflating their nominal income by the monthly household level aggregate price index. Next, to execute our estimation, we take 4 months average of the consumption bundles, and the real income to match their frequency with the corresponding household level sentiments, which is available for every 4 months interval as mentioned above.
+
+Alongside this, following @souleles_expectations_2004, we also collect data of - (i) age of the household head, (ii) change in number of kids, and the change in number of adults (ii) location of the household (rural and urban), (iii) marital status and gender of the household head, (iv) educational qualification and the nature of occupation of the household head for our analysis. \Cref{tbl-desc} gives the descriptive statistics of the relevant variables collected by us from the CPHS survey to execute our estimation. 
+
+```{=latex}
+\begin{table}[]
+\caption{Descriptive Statistics}
+\label{tbl-desc}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}llr@{}}
+\toprule
+Variable            &                                  & Mean/Proportion \\ \midrule
+Income              &                            & 19,834.12       \\
+Age                 &                              & 46.34           \\
+Education           & Less than 5                      & 27.5            \\
+                    & 5-10                             & 56.4            \\
+                    & 10-12                            & 8.7             \\
+                    & 13-15                            & 7               \\
+                    & 15+                              & 0.4             \\
+Gender              & Male                             & 88              \\
+                    & Female                           & 12              \\
+Marital Status      & Married                          & 85              \\
+                    & Unmarried                        & 15              \\
+Geographic Location & Rural                            & 25              \\
+                    & Urban                            & 75              \\
+Occupation          & Agriculture and Allied           & 15.4            \\
+                    & Manufacturing, Industry and Auto & 34.1            \\
+                    & Services, Media, Health          & 50.3            \\
+                    & Others                           & 0.2             \\ \bottomrule
+\end{tabular}
+}
+\end{table}
+```
+
+[^1]:See; \Cref{fig-fe} in \Cref{sec-5} for the plot of the forecast error. 
+[^2]: [https://cpi.mospi.gov.in/TimeSeries_BackSeries_2012.asp](https://cpi.mospi.gov.in/TimeSeries_BackSeries_2012.aspx)

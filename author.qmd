@@ -1,0 +1,33 @@
+---
+format: 
+  pdf:
+    documentclass: scrartcl
+    keep-tex: true
+    template-partials: 
+      - partials/title.tex
+      - partials/before-body.tex
+    include-in-header: 
+      - file: "preamble.tex"
+title: "The Excess Sensitivity of Consumption to Sentiments: Does the PIH hold for India?"
+author: 
+  - name: Nithin.M
+    affiliations:
+      - id: kgp
+        number: 1
+        name: IIT Kharagpur
+        department: Department of Humanities and Social Sciences
+    corresponding: true
+    email: write2nithinm@iitkgp.ac.in
+  - name: Dr. Siddhartha Chattopadhyay
+    affiliations:
+      - ref: kgp
+  - name: Dr. Sohini Sahu
+    affiliations:
+      - id: kanp
+        number: 2
+        name: IIT Kanpur
+        department: Department of Economic Sciences 
+
+    
+
+---

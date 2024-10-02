@@ -1,0 +1,35 @@
+---
+format: 
+  pdf:
+    documentclass: scrartcl
+    classoption: abstract
+    link-citations: true
+    colorlinks: false
+    number-sections: true
+    include-in-header: 
+      - file: "preamble.tex"
+bibliography: references.bib
+csl: apa
+linestretch: 1.2
+---
+
+
+# Introduction {#sec-1}
+{{< include intro.qmd >}}
+
+# Data Description {#sec-2}
+{{< include data.qmd >}} 
+
+# Model {#sec-3}
+{{< include model.qmd >}}
+
+#  The Time-Varying Cross-Sectional Heterogeneity of Inflation Rate {#sec-4}
+{{< include heterogenity.qmd >}}
+
+# Estimation and Results {#sec-5}
+{{< include estimation.qmd >}}
+
+# Conclusion {#sec-6}
+{{< include conclusion.qmd >}}
+
+# References {.unnumbered}

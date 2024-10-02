@@ -1,0 +1,21 @@
+---
+title: "The Excess Sensitivity of Consumption to Sentiments: Does the PIH hold for India?"
+format: 
+  pdf:
+    documentclass: scrartcl
+    classoption: abstract
+    template-partials: 
+      - partials/before-body.tex
+abstract: |
+ The extant literature have already examined the excess sensitivity of consumption, and the validity of the permanent income and life cycle hypothesis (PIH) for the developed countries. India is a big country with a significantly large cross sectional heterogeneity than the developed countries. It provides a rich information content to the micro level Indian data, which is nicely captured in the longitudinal dataset for the Indian households, given by CPHS, CMIE. Using this rich dataset, and inspired from Souleles (2004), this paper is the first genuine attempt to examine the excess sensitivity of consumption to sentiments, and the validity of PIH for India through an Euler equation framework. We find - (i) the excess sensitivity of consumption to sentiments exists, and PIH does not hold for India, (ii) since, sentiments mostly captures the perception household's uncertainty about their own financial condition, and the overall business conditions, precautionary savings motive holds for the Indian households, and (iii) the excess sensitivity of consumption to sentiments exists even after controlling for the household specific forecast errors about their own financial conditions. 
+
+linestretch: 1.5
+thanks: "Authors would like to thank Ms. Monami Mitra, Director, Price Statistics Division, National Statistical Office, Government of India"
+keywords: 
+  -  keyword1
+  -  keyword2
+jel: 
+  - E27
+  - E21
+---
+
