@@ -1,20 +1,29 @@
 $if(title)$
-\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+\title{$title$}
 $endif$
 
+$if(author)$
 $for(by-author)$
 \author{
   $it.name.literal$%
-  $if(by-author.attributes.corresponding)$\thanks{Corresponding author.\\ Email: \texttt{$by-author.email$}}$endif$%  % Add corresponding author footnote if applicable
+  $if(by-author.attributes.corresponding)$\thanks{Corresponding author.}$endif$%  % Mark corresponding author in footnote
   $if(it.acknowledgements)$\thanks{$it.acknowledgements$}$endif$  % Add acknowledgments if applicable
 }
 
-\affil{$for(it.affiliations)$ 
-  $if(it.department)$$it.department$$if(it.name)$, $endif$$endif$  % Department, followed by a comma if institution is present
-  $if(it.name)$$it.name$$endif$  % Institution name
+\affil{$for(by-author.affiliations)$ 
+  $if(it.group)$$it.group$$endif$, 
+  $if(it.department)$$it.department$$endif$, 
+  $it.name$\\ % Line break after institution name
+  $if(it.region)$$it.region$$endif$, $if(it.country)$$it.country$$endif$
   $sep$  % Ensure proper separation of affiliations
-$endfor$}
+$endfor$\\
+Email: \texttt{$it.email$}\\
+ORCID: \texttt{$it.orcid$}  % Include author's email in the affiliation section
+}
 $endfor$
+$else$%
+\author{}
+$endif$
 
 $if(date)$
 \date{$date$}

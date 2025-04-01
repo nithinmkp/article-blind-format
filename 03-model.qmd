@@ -1,0 +1,88 @@
+---
+bibliography: references.bib
+---
+
+Suppose, a generic household $h$, belonging to the geographical location $j$ calculates the minimum expenditure required to obtain a certain amount of consumption bundle by solving the following static problem in each period $t$,
+
+::: {.content-visible when-format="docx"}
+$$
+\begin{array}{rl}
+    \text{minimize} & e_{h,t}^j = \sum_{i=1}^{n} p_{i,t}^j c_{i,ht}^j \quad ; \quad h = 1, 2, \ldots, H; \quad j = \text{rural, urban} \\
+    \text{subject to} & c_{h,t}^j = \prod_{i=1}^{n} \left(c_{i,ht}^j\right)^{a_{i,ht}^j} \quad ; \quad \sum_{i=1}^{n} a_{i,ht}^j = 1
+\end{array}
+$$
+:::
+
+::: {.content-visible when-format="pdf"}
+
+\begin{mini*}|l|
+{}{e_{h, t}^j=\sum_{i=1} p_{i, t}^j c_{i, h t}^j \,; \quad h=1,2,\ldots,H; \quad j={\ rural,urban\ }}
+{}{}
+\addConstraint{c_{h,t}^j}{=}{\prod_{i=1}^{n}\left(c_{i,ht}^j\right)^{a_{i,ht}^j} \,;\quad \sum_{i=1}^{n}{\alpha_{i,ht}^j=1;}}
+\end{mini*}
+
+:::
+where, $p_{i,t}^j$ is the price of the $i^{th}$ sub-category of consumption at, time $t$ for the household, $h$ located at the $j^{th}$ geographical area. $c_{i,h,t}^j$, and $\alpha_{i,h,t}^j$ are the real respectively the demand, and the expenditure share of the $i^{th}$ sub-category of goods by household, $h$; belonging to the $j^{th}$ geographical location at $t$. $e_{h,t}^j$ is the nominal expenditure of household, $h$; belonging to the $j^{th}$ geographical location at time, $t$. The optimization  yields an expenditure minimizing consumption bundle for the household, $h$; located at the $j^{th}$ geographical location at time, $t$, as written as written in @eq-basket. It is a measure of real consumption of the household, $h$ located at the $j^{th}$ geographical area at time, $t$. We use real consumption, and consumption synonymously in this paper.
+
+$$
+c_{h,t}^j=\frac{k_{h,t}^j\ e_{i,h,t}^j}{p_{h,t}^j}
+$$ {#eq-basket}
+
+where, $p_{h,t}^j$ is a measure of aggregate price index for household $h$, belonging to the $j^{th}$ geographical location at $t$ as written below,
+
+$$ 
+p_{h,t}^j=\prod_{i=1}^{n}\left(p_{i,t}^j\right)^{\alpha_{i,ht}^j}\ ;
+$$ {#eq-price}
+
+and,
+
+$$
+k_{h,t}^j=\prod_{i=1}^{n}{\alpha_{i,ht}^j}^{\alpha_{i,ht}^j}
+$$
+
+
+Next, the generic household $h$ solves an intertemporal problem to decide the time path of consumption.
+
+::: {.content-visible when-format="docx"}
+$$
+\begin{array}{rl}
+    \text{maximize} & E_0 \sum_{t=0}^{\infty} \beta^t \log\left(c_{h,t}^j\right) \\
+    \text{subject to the intertemporal budget constraint,} & a_{h,t}^j - c_{h,t}^j = \frac{a_{h,t+1}^j}{R_{t+1}} \\
+    & a_{h,0}^j = \text{given} \quad (\text{Initial condition}) \\
+    & \lim_{t \to \infty} R^{-(t+T)} a_{h,t}^j \geq 0 \quad (\text{Transversality Condition (TVC)})
+\end{array}
+$$
+:::
+
+::: {.content-visible when-format="pdf"}
+
+\begin{maxi*}|l|
+    {}{E_0\sum_{t=0}^{\infty}\beta^t \log\left(c_{h,t}^j\right)}{\label{eq:objective}}{}
+    \addConstraint{a_{h,t}^j - c_{h,t}^j}{= \frac{a_{h,t+1}^j}{R_{t+1}}}{}
+    \addConstraint{
+        \begin{aligned}
+        a_{h,0}^j &= \text{given} \quad &\text{(Initial condition)} \\
+        \lim_{t \to \infty} R^{-(t+T)}a_{h,t}^j &\geq 0 \quad &\text{(Transversality Condition (TVC))}
+        \end{aligned}
+    }{}
+\end{maxi*}
+:::
+where, $a_{h,t}^j$ is the real income, of household $h$, belonging to the $j^{th}$ geographical location at $t$, $R_{t}$is the gross real interest rate at time, $t$, and $0<\beta<1$ is the discount factor. Under logarithmic utility function, and $\beta=R^{(-1)}$, the Euler equation gives
+
+$$
+\Delta ln(c_h(t+1)^j\ )=\delta_{h(t+1)}^j
+$$ {#eq-euler}
+
+where, $E_t\left(\delta_{h\left(t+1\right)}^j\right)=0$. @eq-euler implies the absence of excess sensitivity of consumption – factors included in the information set of the households at $t^{th}$ period cannot forecast the consumption growth of the (t+1) period. Note, the absence of excess sensitivity of consumption implies that the current consumption contains all the relevant information to forecast future consumption. Note, $E_t\left(\delta_{h\left(t+1\right)}^j\right)=0\ \Rightarrow E_t\left(\Delta ln\left(c_{h\left(t+1\right)}^j\right)\right)=E\left(\Delta ln\left(c_{h\left(t+1\right)}^j\right)\middle| I_{ht}^j\right)=0;$ where, $I_{ht}^j$ is the information set of household h belonging to the location $j$ at the $t^{th}$ period. This yields, $E_t\left(ln\left(c_{h\left(t+1\right)}^j\right)\right)=ln\left(c_{ht}^j\right)$, implying current consumption contains all the relevant information to forecast future consumption. Suppose, $x_{ht}^j\in I_{ht}^j$ but, $x_{ht}^j\neq c_{ht}^j$. The PIH implies that, $x_{ht}^j$ cannot predict, $c_{h\left(t+1\right)}^j$. If $x_{ht}^j$ predicts $c_{h\left(t+1\right)}^j$, the excess sensitivity of consumption to $x_{ht}^j$ exists, and the PIH is violated.[^8]
+
+
+
+
+## The Time-varying Cross-sectional Heterogeneity {#sec-3.1}
+{{< include 03.1-time_varying.qmd >}}
+
+
+<!-- Footnotes -->
+
+[^8]: Therefore, to test the excess the excess sensitivity of consumption to $x_{ht}^j$, we include $x_{ht}^j$ in the Euler equation as one of the control variables, and test the significance of its estimated coefficient (see, [@eq-sol1 and @eq-sol2]{.content-visible when-format="docx"}[@eq-sol1 and @eq-sol2]{.content-visible when-format="pdf"} in the text). A significant estimated coefficient of $x_{ht}^j$ implies the presence of excess sensitivity of consumption to $x_{ht}^j$, and the violation of PIH [@hall1978;@jappelli2017economics].
+

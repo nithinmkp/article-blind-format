@@ -1,0 +1,125 @@
+---
+bibliography: references.bib
+---
+
+@jappelli2017economics and @Christelis2016 argue about endogeneity arising from the correlation between the forecast errors of consumption growth in the Euler equation-based estimation. To achieve consistency by addressing such endogeneity, they suggest using survey data-based estimates of expected consumption growth and expected consumption risk for the estimation. On the other hand, to address the spurious excess sensitivity of consumption to sentiments, @souleles_expectations_2004 calculates the forecast error of household sentiments from the survey data and uses it as one of the covariates in his estimation. Following @souleles_expectations_2004, we also calculate the forecast errors for Indian households for their own financial position and use it as one of the covariates in our estimation to address the spurious excess sensitivity of consumption to sentiments and to achieve consistency as well. We calculate the forecast errors by taking the difference of question II and question III mentioned in @sec-2. As a result, the forecast error, $FE_{FP}$, takes discrete values between -2 to +2 in our analysis. Using this measure of forecast errors, we estimate @eq-sol2 through OLS and also through GMM. Results of the OLS estimation and GMM estimation of @eq-sol2 for the food bundle and for the food \& fuel bundle are reported below:
+
+$$
+\Delta ln\left(c_{h\left(t+1\right)}^j\right){=b_0time+b_1W_{h\left(t+1\right)}}+b_2Q_{ht}^j+b_3{FE}_{PC,ht}+\omega_{h\left(t+1\right)}
+$$ {#eq-sol2}
+
+::: {.content-visible when-format="pdf"}
+\FloatBarrier
+
+\begin{table}
+\centering
+\caption{Estimation for Food Bundle and Food \& Fuel Bundle after Controlling for Forecast Error}
+\label{tbl-fe_ols_gmm}
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{OLS} & \multicolumn{2}{c}{GMM} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Food & Food \& Fuel & Food & Food \& Fuel \\
+\midrule
+$Q_{FP}$       & 0.03***  & 0.023***  & 0.476***  & 0.461***  \\
+               & (0.003)  & (0.003)   & (0.00)    & (0.00)    \\
+$FE_{FP}$      & 0.027*** & 0.023***  & 0.53***   & 0.497***  \\
+               & (0.002)  & (0.002)   & (0.00)    & (0.00)    \\
+Age            & -0.000*** & -0.000*** & -0.001    & -0.000    \\
+               & (0.000)   & (0.000)   & (0.96)    & (0.92)    \\
+$\Delta$ kids  & 0.011*** & 0.06***   & 0.017     & 0.003     \\
+               & (0.012)  & (0.003)   & (0.012)   & (0.02)    \\
+$\Delta$ adults& 0.039*** & 0.029***  & 0.009     & 0.011     \\
+               & (0.002)  & (0.002)   & (0.71)    & (0.62)    \\
+\midrule
+Time Dummies   & Yes      & Yes       & Yes       & Yes       \\
+Observations   & 53,312   & 53,312    & 53,312    & 53,312    \\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii) FE represents forecast errors of the financial position, (iv) ***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.}
+\end{table}
+
+\begin{table}
+\centering
+
+\caption{GMM Estimation for Food and Food \& Fuel Bundles - Pre-Covid and Covid Periods after controlling for forecast errors}
+\label{tbl-gmm_fe}
+\begin{threeparttable}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{l cc cc}
+\toprule
+ & \multicolumn{2}{c}{\textbf{Pre-Covid (2016 April - 2020 February)}} & \multicolumn{2}{c}{\textbf{Covid (2020 March - 2022 October)}} \\ 
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & Food  & Food \& Fuel  & Food  & Food \& Fuel  \\ 
+\midrule
+$Q_{FP}$  & 0.25***  & 0.717***  & 0.31***  & 0.20***  \\ 
+          & (0.002)  & (0.030)   & (0.06)   & (0.06)   \\ 
+\addlinespace
+$FE_{FP}$ & 0.613*** & 0.613***  & 0.42***  & 0.68***  \\ 
+          & (0.061)  & (0.061)   & (0.009)  & (0.061)  \\ 
+\addlinespace
+Age       & -0.001*** & -0.001*** & -0.001*** & -0.001*** \\ 
+          & (0.000)   & (0.000)   & (0.000)   & (0.000)   \\ 
+\addlinespace
+$\Delta$ Kids  & 0.017  & 0.017  & -0.03  & -0.03  \\ 
+               & (0.012) & (0.012) & (0.02) & (0.02) \\ 
+\addlinespace
+$\Delta$ Adults  & -0.009  & -0.009**  & -0.01  & -0.01**  \\ 
+                 & (0.71)  & (0.71)    & (0.06) & (0.06)  \\ 
+\midrule
+Time Dummies  & Yes  & Yes  & Yes  & Yes  \\ 
+Observations  & 37,717  & 37,717  & 12,615  & 12,615  \\ 
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii) FE represents forecast errors of the financial position, (iv) ***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.
+}
+\end{table}
+
+:::
+
+::: {.content-visible when-format="docx"}
+|                | OLS - Food | OLS - Food \& Fuel | GMM - Food | GMM - Food \& Fuel |
+|----------------|------------|--------------------|------------|--------------------|
+| $Q_{FP}$       | 0.03***    | 0.023***           | 0.476***   | 0.461***           |
+|                | (0.003)    | (0.003)            | (0.00)     | (0.00)             |
+| $FE_{FP}$      | 0.027***   | 0.023***           | 0.53***    | 0.497***           |
+|                | (0.002)    | (0.002)            | (0.00)     | (0.00)             |
+| Age            | -0.000***  | -0.000***          | -0.001     | -0.000             |
+|                | (0.000)    | (0.000)            | (0.96)     | (0.92)             |
+| $\Delta$ kids  | 0.011***   | 0.06***            | 0.017      | 0.003              |
+|                | (0.012)    | (0.003)            | (0.012)    | (0.02)             |
+| $\Delta$ adults| 0.039***   | 0.029***           | 0.009      | 0.011              |
+|                | (0.002)    | (0.002)            | (0.71)     | (0.62)             |
+| Time Dummies   | Yes        | Yes                | Yes        | Yes                |
+| Observations   | 53,312     | 53,312             | 53,312     | 53,312             |
+
+: Estimation for Food Bundle and Food \& Fuel Bundle after Controlling for Forecast Error {#tbl-fe_ols_gmm}
+
+|                | Pre-Covid (2016 April - 2020 February) - Food | Pre-Covid - Food & Fuel | Covid (2020 March - 2022 October) - Food | Covid - Food & Fuel |
+|---------------|--------------------------------|---------------------|--------------------------------|---------------------|
+| $Q_{FP}$       | 0.25***  | 0.717***  | 0.31***  | 0.20***  |
+|               | (0.002)  | (0.030)   | (0.06)   | (0.06)   |
+| $FE_{FP}$      | 0.613*** | 0.613***  | 0.42***  | 0.68***  |
+|               | (0.061)  | (0.061)   | (0.009)  | (0.061)  |
+| Age           | -0.001*** | -0.001*** | -0.001*** | -0.001*** |
+|               | (0.000)   | (0.000)   | (0.000)   | (0.000)   |
+| $\Delta$ Kids | 0.017  | 0.017  | -0.03  | -0.03  |
+|               | (0.012) | (0.012) | (0.02) | (0.02) |
+| $\Delta$ Adults | -0.009  | -0.009**  | -0.01  | -0.01**  |
+|               | (0.71)  | (0.71)    | (0.06) | (0.06)  |
+| Time Dummies  | Yes  | Yes  | Yes  | Yes  |
+| Observations  | 37,717  | 37,717  | 12,615  | 12,615  |
+
+: GMM Estimation for Food and Food & Fuel Bundles - Pre-Covid and Covid Periods after Controlling for Forecast Errors {#tbl-gmm_fe}
+
+**Note:** (i) Age represents the age of the household head, (ii) $\Delta$ kids and $\Delta$ adults represent the change in the number of kids and adults, respectively, (iii) FE represents forecast errors of the financial position, (iv) $***$, $**$, $*$ represent significance at 1\%, 5\%, and 10\% levels, respectively.
+
+**Note:** (i) Age represents the age of the household head, (ii) $\Delta$ kids and $\Delta$ adults represent the change in the number of kids and adults, respectively, (iii) FE represents forecast errors of the financial position, (iv) ***, **, * represent significance at 1\%, 5\%, and 10\% levels, respectively.
+:::
+
+Results reported in [@tbl-fe_ols_gmm and @tbl-gmm_fe]{.content-visible when-format="docx"}[@tbl-fe_ols_gmm and @tbl-gmm_fe]{.content-visible when-format="pdf"} validate the robustness of our previous results. It shows that household sentiments have significant predicting power and influence business cycles, and it should be properly controlled to forecast consumption. The results of OLS and GMM estimation of @eq-sol2 separately for the pre-Covid periods and Covid-periods, reported in [@tbl-fe_ols_gmm and @tbl-gmm_fe]{.content-visible when-format="docx"}[@tbl-fe_ols_gmm and @tbl-gmm_fe]{.content-visible when-format="pdf"} are characteristically identical with the results reported in @tbl-gmm_combined, re-establishing the robustness of our results.
+

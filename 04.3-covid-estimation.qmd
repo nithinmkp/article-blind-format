@@ -1,0 +1,82 @@
+---
+bibliography: references.bib
+---
+
+@fig-ics shows a fantastic co-movement between consumption growth and the sentiments for the pre-Covid periods. However, it is also evident from @fig-ics that such an exquisite interrelationship between consumption growth, and sentiment breaks down in the Covid-periods[^13]. From @fig-ics, and the lower panel of @tbl-desc we see that the Covid-19 pandemic has fundamentally altered the spending pattern of Indian households perhaps by influencing their income risk through changing the job prospects, and the health-related risks of the households, reflected in the sluggish recovery of household sentiments in the Covid-periods[^14]. Although consumption growth recovers faster than sentiments in the Covid-periods, both sentiment, and consumption growth remain considerably below their corresponding pre-Covid values as depicted in @fig-ics[^15].
+
+Therefore, to disentangle the impact of the Covid-19 pandemic on sentiment, consumption growth, and their interrelationship, we re-estimate @eq-sol1 through GMM separately for the pre-Covid periods, and the Covid-periods. The results for the pre-Covid periods and Covid-periods are reported in @tbl-gmm_combined_full.
+
+::: {.content-visible when-format="pdf"}
+\begin{table}
+\centering
+\caption{GMM Estimation for Food and Food \& Fuel Bundles - Pre-Covid and Covid Periods}
+\label{tbl-gmm_combined_full}
+\begin{threeparttable}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{l cc cc  cc cc}
+\toprule
+ & \multicolumn{4}{c}{\textbf{Pre-Covid Period (2016 April - 2020 February)}} & \multicolumn{4}{c}{\textbf{Covid Period (2020 March - 2022 October)}} \\ 
+\cmidrule(lr){2-5} \cmidrule(lr){6-9}
+ & \multicolumn{2}{c}{\textbf{Food}} & \multicolumn{2}{c}{\textbf{Food \& Fuel}} & \multicolumn{2}{c}{\textbf{Food}} & \multicolumn{2}{c}{\textbf{Food \& Fuel}} \\ 
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) & (8) \\ 
+\midrule
+$Q_{FP}$  & 0.22***  &         & 0.766***  &         & 0.34***  &         & 0.43***  &         \\ 
+          & (0.01)   &         & (0.030)   &         & (0.05)   &         & (0.030)   &         \\ 
+\addlinespace
+$Q_{BC}$  &          & 0.20*** &          & 0.749*** &          & 0.03  &          & 0.36*** \\ 
+          &          & (0.01)  &          & (0.038)  &          & (0.05)  &          & (0.04)  \\ 
+\addlinespace
+Age       & -0.001*** & -0.001*** & -0.001*** & -0.001*** & -0.002*** & -0.001*** & -0.002*** & -0.001*** \\ 
+          & (0.000)   & (0.000)   & (0.000)   & (0.000)   & (0.000)   & (0.000)   & (0.000)   & (0.000)   \\ 
+\addlinespace
+$\Delta$ Kids  & 0.03  & -0.01  & 0.02  & -0.015  & 0.00  & -0.04  & 0.01  & -0.04  \\ 
+               & (0.08) & (0.01) & (0.01) & (0.012) & (0.01) & (0.01) & (0.01) & (0.01) \\ 
+\addlinespace
+$\Delta$ Adults  & -0.02  & 0.03  & -0.07  & 0.03  & -0.01  & 0.00  & -0.01  & 0.00  \\ 
+                 & (0.02) & (0.03) & (0.03) & (0.03) & (0.03) & (0.03) & (0.03) & (0.03) \\ 
+\midrule
+Time Dummies  & Yes  & Yes  & Yes  & Yes  & Yes  & Yes  & Yes  & Yes  \\ 
+Observations  & 38,131  & 38,131  & 38,131  & 38,131  & 17,400  & 17,400  & 17,400  & 17,400  \\ 
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii)***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.}
+\end{table}
+:::
+
+::: {.content-visible when-format="docx"}
+|                           | Pre-Covid Food (1) | Pre-Covid Food (2) | Pre-Covid Food & Fuel (1) | Pre-Covid Food & Fuel (2) | Covid Food (1) | Covid Food (2) | Covid Food & Fuel (1) | Covid Food & Fuel (2) |
+|---------------------------|-------------------|-------------------|-------------------------|-------------------------|--------------|--------------|---------------------|---------------------|
+| $Q_{FP}$                  | 0.22***           |                   | 0.766***                |                         | 0.34***      |              | 0.43***             |                     |
+|                           | (0.01)            |                   | (0.030)                 |                         | (0.05)       |              | (0.030)             |                     |
+| $Q_{BC}$                  |                   | 0.20***           |                          | 0.749***                |              | 0.03         |                     | 0.36***              |
+|                           |                   | (0.01)            |                          | (0.038)                 |              | (0.05)       |                     | (0.04)               |
+| Age                       | -0.001***         | -0.001***         | -0.001***               | -0.001***               | -0.002***    | -0.001***    | -0.002***           | -0.001***           |
+|                           | (0.000)           | (0.000)           | (0.000)                 | (0.000)                 | (0.000)      | (0.000)      | (0.000)             | (0.000)             |
+| $\Delta$ Kids             | 0.03              | -0.01             | 0.02                    | -0.015                  | 0.00         | -0.04        | 0.01                | -0.04               |
+|                           | (0.08)            | (0.01)            | (0.01)                  | (0.012)                 | (0.01)       | (0.01)       | (0.01)              | (0.01)              |
+| $\Delta$ Adults           | -0.02             | 0.03              | -0.07                   | 0.03                    | -0.01        | 0.00         | -0.01               | 0.00                |
+|                           | (0.02)            | (0.03)            | (0.03)                  | (0.03)                  | (0.03)       | (0.03)       | (0.03)              | (0.03)              |
+| Time Dummies              | Yes               | Yes               | Yes                      | Yes                      | Yes          | Yes          | Yes                 | Yes                 |
+| Observations              | 38,131            | 38,131            | 38,131                   | 38,131                   | 17,400       | 17,400       | 17,400              | 17,400              |
+
+: GMM Estimation for Food and Food \& Fuel Bundles - Pre-Covid and Covid Periods {#tbl-gmm_combined_full}
+
+\scriptsize **Note:** (i) Age represents the age of the household head,  
+(ii) \(\Delta\) kids and \(\Delta\) adults represent the change in the number of kids and adults, respectively,  
+(iii) FE represents forecast errors of the financial position,  
+(iv) ***, **, * represent significance at 1\%, 5\%, and 10\% levels, respectively. 
+
+:::
+
+To explain the reduced predictive capacity of sentiments note that, Covid-19 pandemic has a lasting impact on the job prospects, health conditions, and the psyche of the households as noted before. The enduring adverse impact of the Covid-19 pandemic becomes more severe for a developing country like India where, households do not enjoy the widespread and permanent safety nets of the social security schemes like the developed countries. In effect, the Covid-19 pandemic significantly changes income risk of the Indian households, which in turn considerably alters the pattern as well as the determinants of their spending decisions in the Covid-periods. The changing pattern and the determinants of the household spending decisions, and correspondingly the precautionary savings motive significantly reduces the predictive capacity of household sentiments in the Covid-periods.
+
+
+<!-- Footnotes -->
+[^13]: In our analysis, pre-Covid periods is from April, 2016 to February, 2020; and the Covid-periods is from March 2020 to October 2022.  
+
+[^14]: @fig-unemp plots the unemployment rate of India. It shows the lasting adverse impact of the Covid-19 pandemic on the job prospects of the Indian households. 
+
+[^15]: @pistaferri2016 identifies a similar recovery pattern of the US consumption after the global financial crisis. He shows that, alongside sentiments, we need to control for debt and net worth of the households to explain the dynamics of post-financial crisis consumption growth of the US.

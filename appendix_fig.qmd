@@ -1,0 +1,55 @@
+<!-- Figures PDF -->
+<!-- Figure 2 -->
+::: {.content-visible when-format="pdf"}
+![Cross-sectional Heterogeneity of Average Aggregate Inflation Rate, and Household Specific Inflation Rate - Households Classified in terms of Educational Attainment of Household Head](images/mean_educ_Phmt.pdf){#fig-mean_educ height=150%}
+:::
+<!-- Figure 3 -->
+::: {.content-visible when-format="pdf"}
+![Cross-sectional Heterogeneity of Average Aggregate Inflation Rate, and Household Specific Inflation Rate - Households Classified in terms of Age of Household Head](images/mean_age_cat_Phmt.pdf){#fig-mean_age height=150%}
+:::
+
+
+
+<!-- Figure 5 -->
+::: {.content-visible when-format="pdf"}
+![Cross-sectional Heterogeneity of Household Specific Consumption Growth - Households Classified in terms of Educational Attainment of Household Head](images/mean_educ_Chmt.pdf){#fig-mean_educ_chmt height=150%}
+:::
+
+<!-- Figure 6 -->
+::: {.content-visible when-format="pdf"}
+![Cross-sectional Heterogeneity of Household Specific Consumption Growth - Households Classified in terms of Age of Household Head](images/mean_age_cat_Chmt.pdf){#fig-mean_age_chmt height=150%}
+:::
+
+<!-- unemploytment -->
+::: {.content-visible when-format="pdf"}
+![Unemployment Rate](images/unemp_plot.pdf){#fig-unemp height=150%}
+
+:::
+
+<!-- Figures Word -->
+<!-- Figure 2 -->
+::: {.content-visible when-format="docx"}
+![Cross-sectional Heterogeneity of Average Aggregate Inflation Rate, and Household Specific Inflation Rate - Households Classified in terms of Educational Attainment of Household Head](images/mean_educ_Phmt.jpg){#fig-mean_educ height=150%}
+:::
+
+<!-- Figure 3 -->
+
+::: {.content-visible when-format="docx"}
+![Cross-sectional Heterogeneity of Average Aggregate Inflation Rate, and Household Specific Inflation Rate - Households Classified in terms of Age of Household Head](images/mean_age_cat_Phmt.jpg){#fig-mean_age height=150%}
+:::
+
+<!-- Figure 5 -->
+::: {.content-visible when-format="docx"}
+![Cross-sectional Heterogeneity of Household Specific Consumption Growth - Households Classified in terms of Educational Attainment of Household Head](images/mean_educ_Chmt.jpg){#fig-mean_educ_chmt height=150%}
+:::
+
+
+<!-- Figure 6 -->
+::: {.content-visible when-format="docx"}
+![Cross-sectional Heterogeneity of Household Specific Consumption Growth - Households Classified in terms of Age of Household Head](images/mean_age_cat_Chmt.jpg){#fig-mean_age_chmt height=150%}
+:::
+
+<!-- unemployment -->
+::: {.content-visible when-format="docx"}
+![Unemployment Rate](images/unemp_plot.jpg){#fig-unemp height=150%}
+:::

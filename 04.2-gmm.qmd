@@ -1,0 +1,70 @@
+---
+bibliography: references.bib
+---
+
+@toussaint2006variations argues that sentiment contains rich demographic-specific information of spending patterns for US households. Similarly, @blendon1997 argues that individuals form their sentiments mostly by processing information obtained during conversations with their neighbors at the backyard of their house. This implies that the geographical location of the individuals, along with their education, income, and other demographic characteristics, plays an important role in the formation of individual sentiments. As a result, we re-estimate @eq-sol1 through GMM by using, \ensuremath{\mathbf{Z} = [\text{age} \times \text{time},\, \text{income} \times \text{time},\, \text{location},\, \text{marital status},\, \text{gender of household head},\, \text{education},\, \text{nature of occupation},\, \log (\text{real income})]}. We have used, $Z$, the instruments of Indian households following @souleles_expectations_2004, and estimate @eq-sol1 by GMM. @tbl-gmm_combined  reports the results of the GMM estimation. Note, comparison of the coefficients of sentiments, $b_2$ obtained from the GMM estimation with that of the OLS estimation of @eq-sol1 allows us assessing to what extent the part of the household sentiments, explained by the chosen instruments, $Z$ outperforms the raw sentiments in predicting the consumption growth of Indian households.
+
+::: {.content-visible when-format="pdf"}
+\begin{table}
+\centering
+\caption{GMM Estimation for Food and Food \& Fuel}
+\label{tbl-gmm_combined}
+\begin{threeparttable}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{l cc cc}
+\toprule
+& \multicolumn{2}{c}{Food} & \multicolumn{2}{c}{Food \& Fuel} \\ 
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & (1) & (2) & (3) & (4) \\ 
+\midrule
+$Q_{FP}$  & 0.555*** &  & 0.695*** &  \\ 
+          & (0.00)   &  & (0.030)  &  \\ 
+\addlinespace
+$Q_{BC}$  &   & 0.345***  &   & 0.661***  \\ 
+          &   & (0.038)   &   & (0.037)   \\ 
+\addlinespace
+Age       & -0.001***  & -0.001***  & -0.001***  & -0.001***  \\ 
+          & (0.000)    & (0.000)    & (0.000)    & (0.000)    \\ 
+\addlinespace
+$\Delta$ kids  & 0.009  & -0.007  & 0.010  & -0.015  \\ 
+              & (0.37)  & (0.009)  & (0.012)  & (0.012)  \\ 
+\addlinespace
+$\Delta$ adults & 0.018  & 0.041**  & -0.342  & -0.010  \\ 
+                & (0.46)  & (0.021)  & (0.026)  & (0.026)  \\ 
+\midrule
+Time Dummies & Yes & Yes & Yes & Yes  \\ 
+Number of Observations & 56,211 & 56,211 & 56,211 & 56,211  \\ 
+\bottomrule
+\end{tabular}
+}
+\end{threeparttable}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii)***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.}
+\end{table}
+:::
+
+::: {.content-visible when-format="docx"}
+|                       | Food       | Food       | Food & Fuel | Food & Fuel |
+|-----------------------|-----------|-----------|-------------|-------------|
+|                       | (1)       | (2)       | (1)         | (2)         |
+| $Q_{FP}$              | 0.555***  |           | 0.695***    |             |
+|                       | (0.000)   |           | (0.030)     |             |
+| $Q_{BC}$              |           | 0.345***  |             | 0.661***    |
+|                       |           | (0.038)   |             | (0.037)     |
+| Age                   | -0.001*** | -0.001*** | -0.001***   | -0.001***   |
+|                       | (0.000)   | (0.000)   | (0.000)     | (0.000)     |
+| $\Delta$~kids         | 0.009     | -0.007    | 0.010       | -0.015      |
+|                       | (0.37)    | (0.009)   | (0.012)     | (0.012)     |
+| $\Delta$~adults       | 0.018     | 0.041**   | -0.342      | -0.010      |
+|                       | (0.46)    | (0.021)   | (0.026)     | (0.026)     |
+| Time Dummies          | Yes       | Yes       | Yes         | Yes         |
+| Number of Observations| 56,211    | 56,211    | 56,211      | 56,211      |
+
+: GMM Estimation for Food and Food \& Fuel {#tbl-gmm_combined}
+
+\scriptsize **Note:** (i) Age represents the age of the household head, (ii) $\Delta$ kids and $\Delta$ adults represent the change in the number of kids and adults, respectively, (iii) FE represents forecast errors of the financial position, (iv) ***, **, * represent significance at 1\%, 5\%, and 10\% levels, respectively.
+
+:::
+
+@tbl-gmm_combined show that the coefficients of $Q_{FP}$ and $Q_{BC}$ are positive and significant at the 1% level. Like our OLS estimation, the GMM estimation also represents the presence of excess sensitivity of consumption to sentiments and the violation of the PIH as explained before. Moreover, @tbl-gmm_combined show that while $Q_{FP}$ explains $55.5\%$ variation of the consumption growth for the food bundle, it explains almost $70\%$ variation of the food \& fuel bundle. Similarly, results of our GMM estimation reported in @tbl-gmm_combined also show that while $Q_{BC}$ explains $34.5\%$ variation of the consumption growth for the food bundle, it explains almost $66\%$ variation of the food \& fuel bundle. A cursory comparison of the results of @tbl-gmm_combined with that of @tbl-ols_combined shows that the part of the sentiments of Indian households, explained by their geographical location, income, education, and demographics, is a superior predictor of their consumption growth than the raw sentiments itself. Our results reported in @tbl-gmm_combined also show that the fuel consumption of Indian households is more sensitive to the sentiments than the food consumption.
+
+<!-- Footnotes -->

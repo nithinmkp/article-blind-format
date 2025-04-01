@@ -1,0 +1,46 @@
+<!-- Tables  PDF -->
+
+
+<!-- Correlation Matrix -->
+
+::: {.content-visible when-format="pdf"}
+\FloatBarrier
+
+\begin{table}
+    \centering
+    \caption{Correlation Matrix}
+    \label{tbl-correlation}
+    \begin{tabular}{l c c c c c}
+        \toprule
+        & \shortstack{Consumption \\ Growth \\ (Food Bundle)} & \shortstack{Consumption \\ Growth \\ (Food \& Fuel Bundle)} & \shortstack{Business \\ Conditions} & \shortstack{Financial \\ Position} & \shortstack{ICS} \\
+        \midrule
+        Business Conditions & $0.66^{***}$ & $0.59^{***}$ & -- & -- & -- \\
+        Financial Position & $0.62^{***}$ & $0.54^{***}$ & $0.99^{***}$ & -- & -- \\
+        ICS & $0.65^{***}$ & $0.57^{***}$ & $1^{***}$ & $1^{***}$ & -- \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\FloatBarrier
+:::
+
+<!-- Tables  Word -->
+
+
+
+
+::: {.content-visible when-format="docx"}
+
+|                         | (1) Consumption Growth <br> (Food Basket) | (2) Consumption Growth <br> (Food & Fuel Basket) | (3) Business <br> Conditions | (4) Financial <br> Position | (5) ICS  |
+|-------------------------|------------------------------------------|----------------------------------------------|--------------------------|-------------------------|------|
+| **Business Conditions** | 0.66***                                  | 0.59***                                      | --                       | --                      | --   |
+| **Financial Position**  | 0.62***                                  | 0.54***                                      | 0.99***                  | --                      | --   |
+| **ICS**                | 0.65***                                  | 0.57***                                      | 1***                     | 1***                    | --   |
+
+: Correlation Matrix {#tbl-correlation}
+:::
+
+
+
+
+

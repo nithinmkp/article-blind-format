@@ -1,0 +1,12 @@
+format: 
+  pdf:
+    documentclass: scrartcl
+    classoption: abstract
+    link-citations: true
+    colorlinks: false
+    number-sections: true
+    template-partials: 
+      - partials/title.tex
+      - partials/before-body.tex
+    include-in-header: 
+      - partials/_include-in-header.tex

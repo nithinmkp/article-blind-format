@@ -5,7 +5,6 @@ $endif$
 
 $if(abstract)$
 \begin{abstract}
-\setstretch{1.2}
 $abstract$ %
 \\
 \\
@@ -13,9 +12,10 @@ $if(keywords)$
 \noindent%
 \textbf{Keywords:} $for(keywords)$$it$$sep$, $endfor$ %
 $endif$ 
+\vspace{0.5cm}
 $if(jel)$
 \noindent%
-\textbf{JEL:} $for(keywords)$$it$$sep$, $endfor$
+\textbf{JEL Classification:} $for(keywords)$$it$$sep$, $endfor$
 $endif$
 \end{abstract}
 $endif$

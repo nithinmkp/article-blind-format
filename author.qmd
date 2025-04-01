@@ -1,33 +1,65 @@
 ---
-format: 
-  pdf:
-    documentclass: scrartcl
-    keep-tex: true
-    template-partials: 
-      - partials/title.tex
-      - partials/before-body.tex
-    include-in-header: 
-      - file: "preamble.tex"
-title: "The Excess Sensitivity of Consumption to Sentiments: Does the PIH hold for India?"
+title: "Does Sentiment Predict Consumption Growth of Indian Households?"
 author: 
-  - name: Nithin.M
+  - name: Nithin M.
+    orcid: 0000-0002-0939-7927
     affiliations:
       - id: kgp
         number: 1
         name: IIT Kharagpur
         department: Department of Humanities and Social Sciences
-    corresponding: true
+        group: Research Scholar
+        region: West Midnapore, West Bengal
+        country: India
     email: write2nithinm@iitkgp.ac.in
-  - name: Dr. Siddhartha Chattopadhyay
+  - name: Siddhartha Chattopadhyay
+    orcid: 0000-0001-8663-0246
     affiliations:
-      - ref: kgp
-  - name: Dr. Sohini Sahu
+      - id: kgp_p
+        number: 2
+        name: IIT Kharagpur
+        department: Department of Humanities and Social Sciences
+        group: Associate Professor
+        region: West Midnapore, West Bengal
+        country: India
+    email: siddhartha@hss.iitkgp.ac.in
+    attributes:
+      equal-contributor : true
+      corresponding: true
+  - name: Sohini Sahu
+    orcid: 0000-0001-7293-5671
     affiliations:
       - id: kanp
-        number: 2
+        number: 3
         name: IIT Kanpur
-        department: Department of Economic Sciences 
-thanks: "Authors would like to thank Ms. Monami Mitra, Director, Price Statistics Division, National Statistical Office, Government of India"
+        department: Department of Economic Sciences
+        group: Professor
+        region: Kanpur, Uttar Pradesh
+        country: India
+    email: ssahu@iitk.ac.in
+
+keywords: 
+  - Consumption
+  - Consumer Sentiments
+  - Forecasting
+  - Permanent Income Hypothesis
+  - CPHS
+jel: [E21,E27,C23,C26]
+
+thanks: "We are indebted to Professor Kajal Lahiri for his comments and suggestions. We are also indebted to Ms. Monami Mitra, Director, Price Statistics division, National Statistics Office, Government of India for providing data of CPI and Professor Subashankar Chattopadhyay for his insightful comments. Usual disclaimer applies."
     
 
 ---
+\newpage
+
+# Acknowledgements
+We are indebted to Professor Kajal Lahiri for comments and suggestions. We are also indebted to Ms. Monami Mitra, Director, Price Statistics division, National Statistics Office, Government of India for providing data of CPI and Professor Subashankar Chattopadhyay for helpful comments.
+
+# Funding
+The authors declare that no funds, grants, or other support were received during the preparation of this manuscript.
+
+# Competing Interests
+The authors have no relevant financial or non-financial interests to disclose.
+
+# Author Contributions
+All authors contributed to the study conception and design. Material preparation, data collection and analysis were performed by Nithin M. The first draft of the manuscript was written by Siddhartha Chattopadhyay and all authors commented on previous versions of the manuscript. All authors read and approved the final manuscript.

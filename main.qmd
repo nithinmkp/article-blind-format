@@ -1,35 +1,42 @@
 ---
-format: 
-  pdf:
-    documentclass: scrartcl
-    classoption: abstract
-    link-citations: true
-    colorlinks: false
-    number-sections: true
-    include-in-header: 
-      - file: "preamble.tex"
+title: "Does Sentiment Predict Consumption Growth of Indian Households?"
 bibliography: references.bib
 csl: apa
 linestretch: 1.2
+abstract: |
+  {{< include abstract.qmd >}}
+
+keywords: 
+  - Consumption
+  - Consumer Sentiments
+  - Forecasting
+  - Permanent Income Hypothesis
+  - CPHS
+jel: [E21,E27,C23,C26]
 ---
-
-
 # Introduction {#sec-1}
-{{< include intro.qmd >}}
+{{< include 01-intro.qmd >}}
 
 # Data Description {#sec-2}
-{{< include data.qmd >}} 
+{{< include 02-data.qmd >}} 
 
-# Model {#sec-3}
-{{< include model.qmd >}}
+# The PIH and the Excess Sensitivity of Consumption – The Model {#sec-3}
+{{< include 03-model.qmd >}}
 
-#  The Time-Varying Cross-Sectional Heterogeneity of Inflation Rate {#sec-4}
-{{< include heterogenity.qmd >}}
+# Does Sentiment Predict Consumption Growth? {#sec-4}
+{{< include 04-excess_sens.qmd >}}
 
-# Estimation and Results {#sec-5}
-{{< include estimation.qmd >}}
-
-# Conclusion {#sec-6}
-{{< include conclusion.qmd >}}
+# Conclusion {#sec-5}
+{{< include 05-conclusion.qmd >}}
 
 # References {.unnumbered}
+::: {#refs}
+:::
+
+\newpage
+# Appendix {.unnumbered .appendix}
+{{< include appendix_fig.qmd >}}
+
+{{< include appendix_tab.qmd >}}
+
+

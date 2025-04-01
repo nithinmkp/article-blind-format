@@ -1,0 +1,81 @@
+---
+bibliography: references.bib
+---
+
+After observing the positive association between consumption growth, and sentiments, we estimate @eq-sol1 by OLS using the data of Indian households from May 2017 to October 2022. @eq-sol1 is adopted from @souleles_expectations_2004. 
+
+$$
+\Delta ln\left(c_{h\left(t+1\right)}^j\right){=b_0 time+b_1W_{h\left(t+1\right)}}+b_2Q_{ht}^j+\eta_{h\left(t+1\right)}
+$$ {#eq-sol1}
+
+The dependent variable of @eq-sol1, $\Delta ln\left(c_{h\left(t+1\right)}^j\right)$ is the consumption growth for the household $h$, belonging to the $j^{th}$ geographical location at period, $(t+1)$. We have calculated consumption growth either on the basis of the food bundle, or the food \& fuel bundle for as explained above. Our coefficient of interest is, $b_2$ – the excess sensitivity parameter. A statistically significant excess sensitivity parameter implies the presence of the excess sensitivity of consumption to sentiments, and it also represents the violation of the PIH. Following @Ludvigson2004, we use the futuristic sentiments of the households h, belonging to the $j^{th}$ geographical location at time $(t+1)$, $\ Q_{h\left(t+1\right)}^j$ as determinants of consumption growth in @eq-sol1. To estimate @eq-sol1, we use two such futuristic measures of household sentiments – (i) one period ahead future sentiments for the household’s own financial position $\left(Q_{FP}\right)$; and (ii) one period ahead sentiments about the future business condition $\left(Q_{BC}\right)$. 
+
+Along with sentiments, we also include following additional controls in @eq-sol1 - (i) time dummy - $time$ to to control impact of aggregate shocks on the consumption growth of the households. The time dummy takes the value 1 for the said time period, and 0 otherwise. For a panel data with large cross sectional units, and small time dimension; the inclusion of time dummy helps to achieve consistency when aggregate shocks are assumed to uniformly affect all households [@chamberlain1984panel]. and (ii) we also control for the preference shock, determined by the change in number of kids, change in number of adults, and the age of the household head in  $W_{h\left(t+1\right)}$ as proxies of the preference shocks [@souleles_expectations_2004].[^12] @tbl-ols_combined reports the results obtained from estimating @eq-sol1 by OLS.  
+
+::: {.content-visible when-format="pdf"}
+\begin{table}
+\centering
+\caption{OLS Estimation for Food and Food \& Fuel}
+\label{tbl-ols_combined}
+\begin{threeparttable}
+\begin{tabular}{l cc cc}
+\toprule
+& \multicolumn{2}{c}{Food} & \multicolumn{2}{c}{Food \& Fuel} \\ 
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+ & (1) & (2) & (3) & (4)  \\ 
+\midrule
+$Q_{FP}$  & 0.009***  &  & 0.054***  &  \\ 
+          & (0.002)  &  & (0.002)  &  \\ 
+\addlinespace
+$Q_{BC}$  &   & 0.003***  &   & 0.003***  \\ 
+          &   & (0.002)  &   & (0.002)  \\ 
+\addlinespace
+Age       & -0.000***  & -0.000***  & -0.000***  & -0.000***  \\ 
+          & (0.002)  & (0.000)  & (0.002)  & (0.000)  \\ 
+\addlinespace
+$\Delta$ kids  & 0.011***  & 0.011***  & 0.07***  & 0.07***  \\ 
+              & (0.012)  & (0.012)  & (0.002)  & (0.002)  \\ 
+\addlinespace
+$\Delta$ adults & 0.038***  & 0.038***  & 0.028***  & 0.002***  \\ 
+                & (0.002)  & (0.002)  & (0.002)  & (0.002)  \\ 
+\midrule
+Time Dummies & Yes & Yes & Yes & Yes  \\ 
+Number of Observations & 58,871 & 58,871 & 58,871 & 58,871  \\ 
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\caption*{\footnotesize \textbf{Note:} : (i) Age represents the age of the household head, (ii) $\Delta$ kids, and $\Delta$ adults  represent change in number of kids, and change in number of adults respectively, (iii)***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.}
+\end{table}
+
+:::
+
+::: {.content-visible when-format="docx"}
+|                       | Food                  |                        | Food & Fuel           |                        |
+|-----------------------|-----------------------|-----------------------|-----------------------|-----------------------|
+|                       | (1)                  | (2)                  | (1)                  | (2)                  |
+| $Q_{FP}$              | 0.009***             |                       | 0.054***             |                       |
+|                       | (0.002)              |                       | (0.002)              |                       |
+| $Q_{BC}$              |                       | 0.003***             |                       | 0.003***             |
+|                       |                       | (0.002)              |                       | (0.002)              |
+| Age                   | -0.000***            | -0.000***            | -0.000***            | -0.000***            |
+|                       | (0.002)              | (0.000)              | (0.002)              | (0.000)              |
+| $\Delta$ kids         | 0.011***             | 0.011***             | 0.07***              | 0.07***              |
+|                       | (0.012)              | (0.012)              | (0.002)              | (0.002)              |
+| $\Delta$ adults       | 0.038***             | 0.038***             | 0.028***             | 0.002***             |
+|                       | (0.002)              | (0.002)              | (0.002)              | (0.002)              |
+| Time Dummies          | Yes                  | Yes                  | Yes                  | Yes                  |
+| Number of Observations| 58,871               | 58,871               | 58,871               | 58,871               |
+
+: **OLS Estimation for Food and Food \& Fuel** {#tbl-ols_combined}
+
+\scriptsize **Note:** (i) Age represents the age of the household head,  
+(ii) $\Delta$ kids and $\Delta$ adults represent the change in the number of kids and adults, respectively,  
+(iii) ***, **, * represent significance at 1%, 5%, and 10% levels, respectively.
+
+:::
+
+@tbl-ols_combined shows that, the coefficients of $Q_{FP}$  and $Q_{BC}$ are positive, and significant at 1% level.  @tbl-ols_combined further reveal that, the raw sentiments of Indian household’s about their one period ahead financial position $\left(Q_{FP}\right)$, can explain only $0.9\%$ variation of the consumption growth of the food bundle, and $5.4\%$ variation of the food \& fuel bundle. On the other hand, we find that the raw sentiments of Indian household’s about their one period ahead business condition $\left(Q_{BC}\right)$, can explain only $0.3\%$ variation of the consumption growth of both the food bundle, and the food \& fuel bundle. In effect, the results of @tbl-ols_combined imply that, the sentiments of Indian households contains additional information, beyond that is in the current consumption, required to predict the future consumption, which refutes the prediction of PIH as discussed above.
+
+<!-- Footnotes -->
+
+[^12]: @sec-3 shows that, PIH holds when the homogeneous discount is equal to the inverse of the gross interest rate, $\beta=R^{-1}$. However, the discount factor can also vary across households. Alongside the preference shock, variables included in  $W_h(t+1)$   in @eq-sol1 captures the cross-sectional heterogeneity of the discount factor as well.
