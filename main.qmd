@@ -1,5 +1,5 @@
 ---
-title: "Does Sentiment Predict Consumption Growth of Indian Households?"
+title: "{{< var title >}}"
 bibliography: references.bib
 csl: apa
 linestretch: 1.2

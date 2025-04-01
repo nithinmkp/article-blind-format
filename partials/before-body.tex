@@ -15,10 +15,12 @@ $endif$
 \vspace{0.5cm}
 $if(jel)$
 \noindent%
-\textbf{JEL Classification:} $for(keywords)$$it$$sep$, $endfor$
+\textbf{JEL Classification:} $for(jel)$$it$$sep$, $endfor$
 $endif$
 \end{abstract}
 $endif$
 
 \pagenumbering{gobble}
 \newpage
+\pagenumbering{arabic}  
+\setcounter{page}{1} 

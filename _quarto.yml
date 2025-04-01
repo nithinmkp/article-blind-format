@@ -10,3 +10,4 @@ format:
       - partials/before-body.tex
     include-in-header: 
       - partials/_include-in-header.tex
+    keep-tex: true

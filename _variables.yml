@@ -1,0 +1,39 @@
+title: "Does Sentiment Predict Consumption Growth of Indian Households?"
+jel: [E21,E27,C23,C26]
+author: 
+  - name: Nithin M.
+    orcid: 0000-0002-0939-7927
+    affiliations:
+      - id: kgp
+        number: 1
+        name: IIT Kharagpur
+        department: Department of Humanities and Social Sciences
+        group: Research Scholar
+        region: West Midnapore, West Bengal
+        country: India
+    email: write2nithinm@iitkgp.ac.in
+  - name: Siddhartha Chattopadhyay
+    orcid: 0000-0001-8663-0246
+    affiliations:
+      - id: kgp_p
+        number: 2
+        name: IIT Kharagpur
+        department: Department of Humanities and Social Sciences
+        group: Associate Professor
+        region: West Midnapore, West Bengal
+        country: India
+    email: siddhartha@hss.iitkgp.ac.in
+    attributes:
+      equal-contributor : true
+      corresponding: true
+  - name: Sohini Sahu
+    orcid: 0000-0001-7293-5671
+    affiliations:
+      - id: kanp
+        number: 3
+        name: IIT Kanpur
+        department: Department of Economic Sciences
+        group: Professor
+        region: Kanpur, Uttar Pradesh
+        country: India
+    email: ssahu@iitk.ac.in
