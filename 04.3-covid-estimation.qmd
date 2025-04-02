@@ -2,7 +2,7 @@
 bibliography: references.bib
 ---
 
-@fig-ics shows a fantastic co-movement between consumption growth and the sentiments for the pre-Covid periods. However, it is also evident from @fig-ics that such an exquisite interrelationship between consumption growth, and sentiment breaks down in the Covid-periods[^13]. From @fig-ics, and the lower panel of @tbl-desc we see that the Covid-19 pandemic has fundamentally altered the spending pattern of Indian households perhaps by influencing their income risk through changing the job prospects, and the health-related risks of the households, reflected in the sluggish recovery of household sentiments in the Covid-periods[^14]. Although consumption growth recovers faster than sentiments in the Covid-periods, both sentiment, and consumption growth remain considerably below their corresponding pre-Covid values as depicted in @fig-ics[^15].
+@fig-ics shows a fantastic co-movement between consumption growth and the sentiments for the pre-Covid periods. However, it is also evident from @fig-ics that such an exquisite interrelationship between consumption growth, and sentiment breaks down in the Covid-periods[^15]. From @fig-ics, and the lower panel of @tbl-desc we see that the Covid-19 pandemic has fundamentally altered the spending pattern of Indian households perhaps by influencing their income risk through changing the job prospects, and the health-related risks of the households, reflected in the sluggish recovery of household sentiments in the Covid-periods[^16]. Although consumption growth recovers faster than sentiments in the Covid-periods, both sentiment, and consumption growth remain considerably below their corresponding pre-Covid values as depicted in @fig-ics[^17].
 
 Therefore, to disentangle the impact of the Covid-19 pandemic on sentiment, consumption growth, and their interrelationship, we re-estimate @eq-sol1 through GMM separately for the pre-Covid periods, and the Covid-periods. The results for the pre-Covid periods and Covid-periods are reported in @tbl-gmm_combined_full.
 
@@ -75,8 +75,8 @@ To explain the reduced predictive capacity of sentiments note that, Covid-19 pan
 
 
 <!-- Footnotes -->
-[^13]: In our analysis, pre-Covid periods is from April, 2016 to February, 2020; and the Covid-periods is from March 2020 to October 2022.  
+[^15]: In our analysis, pre-Covid periods is from April, 2016 to February, 2020; and the Covid-periods is from March 2020 to October 2022.  
 
-[^14]: @fig-unemp plots the unemployment rate of India. It shows the lasting adverse impact of the Covid-19 pandemic on the job prospects of the Indian households. 
+[^16]: @fig-unemp plots the unemployment rate of India. It shows the lasting adverse impact of the Covid-19 pandemic on the job prospects of the Indian households. 
 
-[^15]: @pistaferri2016 identifies a similar recovery pattern of the US consumption after the global financial crisis. He shows that, alongside sentiments, we need to control for debt and net worth of the households to explain the dynamics of post-financial crisis consumption growth of the US.
+[^17]: @pistaferri2016 identifies a similar recovery pattern of the US consumption after the global financial crisis. He shows that, alongside sentiments, we need to control for debt and net worth of the households to explain the dynamics of post-financial crisis consumption growth of the US.
