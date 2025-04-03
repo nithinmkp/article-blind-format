@@ -24,6 +24,9 @@
 ::: {.content-visible when-format="pdf"}
 ![Unemployment Rate](images/unemp_plot.pdf){#fig-unemp height=150%}
 
+\FloatBarrier
+sourece:  "  nnnd"
+\FloatBarrier
 :::
 
 <!-- Figures Word -->

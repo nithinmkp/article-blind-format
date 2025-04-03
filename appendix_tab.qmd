@@ -19,6 +19,7 @@
         ICS & $0.65^{***}$ & $0.57^{***}$ & $1^{***}$ & $1^{***}$ & -- \\
         \bottomrule
     \end{tabular}
+    \caption*{\footnotesize \textbf{Note:}  ***, **, * represent significance at 1\%, 5\%, and 10\% level respectively.}
 \end{table}
 
 \FloatBarrier
