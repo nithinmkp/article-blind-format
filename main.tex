@@ -782,7 +782,7 @@ and also over time.
 
 \centering{
 
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/mean_occupation_cat_Phmt.pdf}
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-1.pdf}
 
 }
 
@@ -795,13 +795,13 @@ Households Classified in terms of Occupations of Household Head}
 Since, households often change occupation over time, we calculate the
 inflation rate after classifying the households according to the
 educational qualification, and the age of the household head.
-{Figure~\ref{fig-mean_educ} and Figure~\ref{fig-mean_age}} (see appendix
-for figures) plot the average inflation rate from May 2017 to October
-2022 for the Indian households classified according to the educational
-qualification, and the age of the household head respectively. Like
+{Figure~\ref{fig-mean_educ} and Figure~\ref{fig-mean_age}} plot the
+average inflation rate from May 2017 to October 2022 for the Indian
+households classified according to the educational qualification, and
+the age of the household head respectively. Like
 Figure~\ref{fig-mean_occup}, {Figure~\ref{fig-mean_educ} and
 Figure~\ref{fig-mean_age}} also portray the significant variation of the
-average inflation rate across different types of households
+average inflation rate across different types of households.
 
 Next, to understand the cross-sectional heterogeneity in real
 consumption, we calculate a monthly household-specific
@@ -839,18 +839,35 @@ Figure~\ref{fig-mean_occup_chmt} also shows the slow recovery of the
 consumption of Indian households in the periods after the Covid-19
 pandemic.
 
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-2.pdf}
+
+}
+
+\caption{\label{fig-mean_occup_chmt}Cross-sectional Heterogeneity of
+Household Specific Consumption Growth - Households Classified in terms
+of Occupation of Household Head}
+
+\end{figure}%
+
 {Figure~\ref{fig-mean_educ_chmt} and Figure~\ref{fig-mean_age_chmt}} on
 the other hand, portray the average consumption growth from May 2017 to
 October 2022 when the households are classified according to the
 educational qualification, and the age of the household head.
-{Figure~\ref{fig-mean_educ_chmt} and Figure~\ref{fig-mean_age_chmt}}(see
-appendix for figures) also depict significant time-varying cross
-sectional heterogeneity, and the slow recovery of the consumption growth
-from the Covid-19 pandemic shock for the Indian households. The
-significant time-varying cross sectional heterogeneity depicted in
-{Figure~\ref{fig-mean_occup_chmt} to Figure~\ref{fig-mean_age_chmt}}
-show that, the average consumption growth for the Indian households has
-a definite pattern, and it is not random as predicted by the PIH as
+{Figure~\ref{fig-mean_educ_chmt} and
+Figure~\ref{fig-mean_age_chmt}}\footnote{See Appendix for
+  Figure~\ref{fig-mean_educ}, Figure~\ref{fig-mean_age},
+  Figure~\ref{fig-mean_educ_chmt} and Figure~\ref{fig-mean_age_chmt}}
+also depict significant time-varying cross sectional heterogeneity, and
+the slow recovery of the consumption growth from the Covid-19 pandemic
+shock for the Indian households. The significant time-varying cross
+sectional heterogeneity depicted in {Figure~\ref{fig-mean_occup_chmt},
+Figure~\ref{fig-mean_educ_chmt} and Figure~\ref{fig-mean_age_chmt}} show
+that, the average consumption growth for the Indian households has a
+definite pattern, and it is not random as predicted by the PIH as
 mentioned above in Equation~\ref{eq-euler}. Note in our expenditure
 minimizing consumption bundle, the time-varying cross-sectional
 heterogeneity of real consumption arises from the time-varying
@@ -861,20 +878,6 @@ preserves the information content arising from the cross-sectional
 heterogeneity in household specific nominal consumption, and the
 household specific price level, which is relevant for better forecasting
 (\citeproc{ref-lahiri_determinants_2016}{Lahiri \& Zhao, 2016}).
-
-\begin{figure}
-
-\centering{
-
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/mean_occupation_cat_Chmt.pdf}
-
-}
-
-\caption{\label{fig-mean_occup_chmt}Cross-sectional Heterogeneity of
-Household Specific Consumption Growth - Households Classified in terms
-of Occupation of Household Head}
-
-\end{figure}%
 
 \section{Does Sentiment Predict Consumption Growth?}\label{sec-4}
 
@@ -914,7 +917,7 @@ below their baseline value till October 2022.
 
 \centering{
 
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/ics_new.pdf}
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-3.pdf}
 
 }
 
@@ -1051,7 +1054,11 @@ consumption growth of both the food bundle, and the food \& fuel bundle.
 In effect, the results of Table~\ref{tbl-ols_combined} imply that, the
 sentiments of Indian households contains additional information, beyond
 that is in the current consumption, required to predict the future
-consumption, which refutes the prediction of PIH as discussed above.
+consumption, which refutes the prediction of PIH as discussed
+above.\footnote{Anthony Bryant \& Macri
+  (\citeproc{ref-anthony2005does}{2005}) develop a theoretical model to
+  analyze the positive relationship between sentiments and consumption
+  observed for Australia.}
 
 \subsection{The GMM Estimation}\label{the-gmm-estimation}
 
@@ -1066,7 +1073,7 @@ implies that the geographical location of the individuals, along with
 their education, income, and other demographic characteristics, plays an
 important role in the formation of individual sentiments. As a result,
 we re-estimate Equation~\ref{eq-sol1} through GMM by using,
-\ensuremath{\mathbf{Z} = [\text{age} \times \text{time},\, \text{income} \times \text{time},\, \text{location},\, \text{marital status},\, \text{gender of household head},\, \text{nature of occupation},\, \text{education},\, \\ \log (\text{real income})]}.
+\ensuremath{\mathbf{Z} = [\text{age} \times \text{time},\, \text{income} \times \text{time},\, \text{location},\, \text{marital status},\, \text{gender of household head},\, \text{education},\, \text{nature of occupation},\, \log (\text{real income})]}.
 We have used, \(Z\), the instruments of Indian households following
 Souleles (\citeproc{ref-souleles_expectations_2004}{2004}), and estimate
 Equation~\ref{eq-sol1} by GMM. Table~\ref{tbl-gmm_combined} reports the
@@ -1443,6 +1450,11 @@ Angrist, J. D., \& Krueger, A. B. (1992). The {Effect} of {Age} at
 \emph{Journal of the American Statistical Association}, \emph{87}(418),
 328--336. \url{https://doi.org/10.1080/01621459.1992.10475212}
 
+\bibitem[\citeproctext]{ref-anthony2005does}
+Anthony Bryant, W., \& Macri, J. (2005). Does sentiment explain
+consumption? \emph{Journal of Economics and Finance}, \emph{29}(1),
+97--110.
+
 \bibitem[\citeproctext]{ref-blendon1997}
 Blendon, R. J., Benson, J. M., Brodie, M., Morin, R., Altman, D. E.,
 Gitterman, D., Brossard, M., \& James, M. (1997). Bridging the gap
@@ -1544,7 +1556,7 @@ Vuchelen, J. (2004). Consumer sentiment and macroeconomic forecasts.
 
 \centering{
 
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/mean_educ_Phmt.pdf}
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-4.pdf}
 
 }
 
@@ -1559,7 +1571,7 @@ Head}
 
 \centering{
 
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/mean_age_cat_Phmt.pdf}
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-5.pdf}
 
 }
 
@@ -1573,7 +1585,7 @@ Households Classified in terms of Age of Household Head}
 
 \centering{
 
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/mean_educ_Chmt.pdf}
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-6.pdf}
 
 }
 
@@ -1587,7 +1599,7 @@ of Educational Attainment of Household Head}
 
 \centering{
 
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/mean_age_cat_Chmt.pdf}
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-7.pdf}
 
 }
 
@@ -1601,7 +1613,7 @@ of Age of Household Head}
 
 \centering{
 
-\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/unemp_plot.pdf}
+\includegraphics[width=\linewidth,height=1.5\textheight,keepaspectratio]{images/fig-8.pdf}
 
 }
 
